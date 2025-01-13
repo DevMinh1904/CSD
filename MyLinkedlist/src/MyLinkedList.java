@@ -44,5 +44,17 @@ public class MyLinkedList {
         tail.setNext(newNode);
         tail = newNode;
     }
-
+    
+    public void addHead(int number) {
+        
+        Node newNode = new Node(number);
+        
+        if (head == null && tail == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.setNext(head);
+            head = newNode;
+        }
+    }
 }

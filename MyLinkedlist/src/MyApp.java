@@ -17,11 +17,14 @@ public class MyApp {
         list.addTail(10);
         list.addTail(7);
         list.addTail(15);
+        list.addHead(100);
         
         Node head = list.getHead();
         System.out.println("Danh sach: ");
         System.out.print(head.getInfo() + " ");
         System.out.print(head.getNext().getInfo() + " ");
         System.out.print(head.getNext().getNext().getInfo() + " ");
+        System.out.print(head.getNext().getNext().getNext().getInfo() + " ");
+
     }
 }
