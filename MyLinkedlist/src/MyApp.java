@@ -20,6 +20,7 @@ public class MyApp {
         list.addTail(20);
         list.addHead(100);
         list.traverse();
+        list.find(7);
         
         Node head = list.getHead();
         System.out.println("Danh sach: ");
