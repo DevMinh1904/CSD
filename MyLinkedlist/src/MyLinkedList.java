@@ -40,21 +40,29 @@ public class MyLinkedList {
             tail.setNext(newNode);
             tail = newNode;
         }
-
-        tail.setNext(newNode);
-        tail = newNode;
     }
-    
+
     public void addHead(int number) {
-        
+
         Node newNode = new Node(number);
-        
+
         if (head == null && tail == null) {
             head = newNode;
             tail = newNode;
         } else {
             newNode.setNext(head);
             head = newNode;
+        }
+    }
+
+    public void traverse() {
+
+        Node p;
+        p = head;
+        
+        while (p != null) {
+            System.out.println(" " + p.getInfo());
+            p = p.getNext();
         }
     }
 }

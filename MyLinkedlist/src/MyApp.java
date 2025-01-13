@@ -17,7 +17,9 @@ public class MyApp {
         list.addTail(10);
         list.addTail(7);
         list.addTail(15);
+        list.addTail(20);
         list.addHead(100);
+        list.traverse();
         
         Node head = list.getHead();
         System.out.println("Danh sach: ");
