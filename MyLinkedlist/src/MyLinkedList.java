@@ -61,7 +61,7 @@ public class MyLinkedList {
         p = head;
         
         while (p != null) {
-            System.out.println(" " + p.getInfo());
+            System.out.println(p.getInfo());
             p = p.getNext();
         }
     }
