@@ -22,8 +22,19 @@ public class MyApp {
         list.traverse();
         list.find(7);
         
+        Node current = list.getHead();
+        while (current != null) {
+            if (current.getInfo() == 12) {
+                list.insert(current, 25);
+                break;
+            }
+            current = current.getNext();
+        }
+        System.out.println("\nList after inserting 25 after 12:");
+        list.traverse();
+        
         Node head = list.getHead();
-        System.out.println("Danh sach: ");
+        System.out.println("\nDanh sach: ");
         System.out.print(head.getInfo() + " ");
         System.out.print(head.getNext().getInfo() + " ");
         System.out.print(head.getNext().getNext().getInfo() + " ");

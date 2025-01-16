@@ -59,26 +59,34 @@ public class MyLinkedList {
 
         Node p;
         p = head;
-        
+
         while (p != null) {
             System.out.println(p.getInfo());
             p = p.getNext();
         }
     }
-    
+
     public void find(int number) {
         Node p;
         p = head;
-        
-        while(p != null && p.getInfo() != number){
+
+        while (p != null && p.getInfo() != number) {
             p = p.getNext();
         }
         System.out.println(p.getInfo());
     }
-    
-    public void insert(Node p, int number){
+
+    public void insert(Node p, int number) {
+        if (p == null) {
+            return;
+        }
+
         Node newNode = new Node(number);
-        newNode.setNode
-        
+        newNode.setNext(p.getNext());
+        p.setNext(newNode);
+
+        if (p == tail) {
+            tail = newNode;
+        }
     }
 }
