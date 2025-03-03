@@ -71,4 +71,30 @@ public class MyTree {
     public void traverseInOrder(){
         inOrder(root);
     }
+    
+    public void insert(int x) {
+        root = insertRec(root, x);
+    }
+
+    private TreeNode insertRec(TreeNode node, int x) {
+        if (node == null) {
+            return new TreeNode(x);
+        }
+        if (x < node.getInfo()) {
+            node.setLeft(insertRec(node.getLeft(), x));
+        } else if (x > node.getInfo()) {
+            node.setRight(insertRec(node.getRight(), x));
+        }
+        return node;
+    }
+    
+    
+    public void balance(int[] arr, int first, int last) {
+        if (first <= last) {
+            int middle = (first + last) / 2;
+            insert(arr[middle]);
+            balance(arr, first, middle - 1);
+            balance(arr, middle + 1, last);
+        }
+    }
 }

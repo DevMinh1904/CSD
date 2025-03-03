@@ -19,5 +19,9 @@ public class MyTreeApp {
         System.out.println("");
         tree.traverseInOrder();
         System.out.println("");
+        tree.insert(10);
+        tree.insert(122);
+        tree.traverseInOrder();
+        
     }
 }
