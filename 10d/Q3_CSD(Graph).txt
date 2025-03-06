@@ -1,0 +1,262 @@
+ ||__TRAVERSAL__//breadth-first traversal
+ ||	    ||______//dept-first traversal
+ ||     ||______//example breadth-first 
+ ||
+ ||___ALGORITHM_//Hàm tính đường đi ngắn nhất dùng Dijkstra từ a đến b đồng thời trả về tập S(chứa các đỉnh có khoảng cách đã được xác định)
+ ||          ||_// Hàm tính khoảng cách nhỏ nhất dùng Dijkstra từ đỉnh a đến đỉnh b
+ ||
+ ||___OTHER_____//count the connectivity parts 
+    		//check conditions for the existence of Euler’s cycle
+
+
+
+//breadth-first traversal
+  void breadth(boolean [] visited, int k, RandomAccessFile f) throws Exception{
+	GQueue q = new GQueue();
+    int r,i;
+    boolean [] enqueued = new boolean[20];
+    for(i=0;i<n;i++) enqueued[i]=false;
+    q.enqueue(k); enqueued[k]=true;
+    while(!q.isEmpty())
+     {r = q.dequeue();
+      if(!visited[r]) {fvisit(r,f);//modifier function fvisit
+	  visited[r] = true;}
+      for(i=0;i<n;i++)
+       {if(!visited[i] && !enqueued[i] && a[r][i]>0) {q.enqueue(i);enqueued[i]=true;}
+       }
+     }
+   }
+
+  void breadth(int  k, RandomAccessFile f) throws Exception{
+	boolean [] visited = new boolean[20];
+    int i;
+    for(i=0;i<n;i++) visited[i]=false;
+    breadth(visited,k,f);
+    for(i=0;i<n;i++) if(!visited[i]) breadth(visited,i,f);
+   }
+
+//breadth first print degree with: A(4) E(3) F(3) G(2) I(3) B(2) C(1) H(2) D(1)
+   void fvisitDeg(int i, RandomAccessFile f) throws Exception{
+	f.writeBytes(" "+v[i]+"("+deg[i]+")");
+   }
+//dept-first traversal
+  void depth(boolean [] visited,int k, RandomAccessFile f) throws Exception{
+	fvisit(k,f);visited[k]=true;
+    for(int i=0;i<n;i++)
+      {if(!visited[i] && a[k][i]>0) depth(visited,i,f);
+      }
+   }
+  void depth(int k, RandomAccessFile f) throws Exception{
+	boolean [] visited = new boolean[20];
+    int i;
+    for(i=0;i<n;i++) visited[i]=false;
+    depth(visited,k,f);
+    for(i=0;i<n;i++) 
+       if(!visited[i]) depth(visited,i,f);
+   }
+
+//Hàm tính đường đi ngắn nhất dùng Dijkstra từ a đến b đồng thời trả về tập S(chứa các đỉnh có khoảng cách đã được xác định)
+     public List<Integer> shortestPath(int a, int b, List<Integer> addedToS) {
+        int[] dist = new int[n];  // Mảng khoảng cách từ a đến các đỉnh khác
+        int[] prev = new int[n];  // Mảng chứa đỉnh trước trong đường đi ngắn nhất
+        dijkstra(a, dist, prev, addedToS);  // Gọi thuật toán Dijkstra để tìm khoảng cách và đường đi, đồng thời lưu các đỉnh vào tập S
+
+        return extractPath(prev, b);  // Trả về danh sách các đỉnh trong đường đi ngắn nhất từ a đến b
+    }
+
+// Hàm tính khoảng cách nhỏ nhất dùng Dijkstra từ đỉnh a đến đỉnh b
+    public int shortestDistance(int a, int b) {
+        int[] dist = new int[n];  // Mảng khoảng cách từ a đến các đỉnh khác
+        int[] prev = new int[n];  // Mảng chứa đỉnh trước trong đường đi ngắn nhất
+        List<Integer> addedToS = new ArrayList<>();  // Không cần nhưng giữ để đồng bộ với hàm Dijkstra
+        dijkstra(a, dist, prev, addedToS);  // Gọi thuật toán Dijkstra để tính khoảng cách
+
+        return dist[b];  // Trả về khoảng cách ngắn nhất từ a đến b
+    }
+
+// Thuật toán Dijkstra từ đỉnh src, lưu thứ tự các đỉnh vào addedToS
+    void dijkstra(int src, int[] dist, int[] prev, List<Integer> addedToS) {
+        boolean[] visited = new boolean[n];  // Mảng đánh dấu các đỉnh đã duyệt
+        Arrays.fill(dist, 99);  // Giả định 99 là vô cực (không có đường đi)
+        Arrays.fill(prev, -1);  // Khởi tạo mảng đỉnh trước
+        dist[src] = 0;  // Khoảng cách từ đỉnh src đến chính nó là 0
+
+        for (int i = 0; i < n; i++) {
+            int u = findMinVertex(dist, visited);  // Tìm đỉnh có khoảng cách nhỏ nhất
+            if (u == -1) {
+                break;  // Nếu không còn đỉnh nào có thể tiếp cận
+            }
+            visited[u] = true;  // Đánh dấu đỉnh u đã được duyệt
+            addedToS.add(u);  // Thêm đỉnh u vào danh sách các đỉnh đã được thêm vào tập S
+
+            // Xét tất cả các đỉnh kề với đỉnh u
+            for (int v = 0; v < n; v++) {
+                if (!visited[v] && a[u][v] != 0 && a[u][v] != 99 && dist[u] + a[u][v] < dist[v]) {
+                    dist[v] = dist[u] + a[u][v];  // Cập nhật khoảng cách ngắn nhất
+                    prev[v] = u;  // Cập nhật đỉnh trước đó trong đường đi ngắn nhất
+                }
+            }
+        }
+    }
+
+// Hàm tìm đỉnh chưa được duyệt có khoảng cách nhỏ nhất
+    int findMinVertex(int[] dist, boolean[] visited) {
+        int minDist = 99;  // Giả định 99 là vô cực
+        int minVertex = -1;
+        for (int i = 0; i < n; i++) {
+            if (!visited[i] && dist[i] < minDist) {
+                minDist = dist[i];
+                minVertex = i;
+            }
+        }
+        return minVertex;
+    }
+
+// Hàm trích xuất đường đi từ mảng prev
+    List<Integer> extractPath(int[] prev, int dest) {
+        List<Integer> path = new ArrayList<>();
+        for (int at = dest; at != -1; at = prev[at]) {
+            path.add(at);  // Thêm đỉnh vào danh sách
+        }
+        Collections.reverse(path);  // Đảo ngược danh sách để có đường đi từ đỉnh a đến đỉnh b
+        return path;
+    }
+
+//count degree
+ int deg(int i) {
+     int s,j;
+     s=0;
+     for(j=0;j<n;j++) s += a[i][j];
+     s += a[i][i];
+     return(s);
+  }
+  
+//check has Isolated
+  boolean hasIsolated() {
+    for(int i=0;i<n;i++) 
+      if(deg(i)==0) return(true);
+    return(false);
+  }
+//check connect
+  boolean isConnected() {
+    boolean [] p = new boolean[n];
+    int i,j,r;
+    for(i=0;i<n;i++) p[i]=false;
+    Stack s = new Stack();
+    s.push(0); p[0] = true;
+    while(!s.isEmpty()) {
+      r = s.pop();
+      for(i=0;i<n;i++)
+        if(!p[i] && a[r][i]>0) {
+          s.push(i); p[i]=true;  
+        }  
+    }
+    for(i=0;i<n;i++)
+        if(!p[i]) return(false);
+    return(true);
+  }
+ 
+//check undirected
+  boolean isUnDirected() {
+    int i,j;
+    for(i=0;i<n;i++)
+      for(j=0;j<n;j++)
+        if(a[i][j] != a[j][i]) return(false);
+    return(true);
+  }
+  
+//check all deg even
+  boolean allDegEven() {
+    for(int i=0;i<n;i++)
+      if(deg(i)%2 == 1) return(false);
+    return(true);
+  }
+  
+//check has euler cycle
+  boolean hasEulerCycle() {
+    if(!hasIsolated() && isUnDirected() && isConnected() && allDegEven())
+       return(true);
+      else
+        return(false);
+  }
+  
+//euler cycle
+   void eulerCycle(int fro, RandomAccessFile f) throws IOException, Exception {
+    if(!hasEulerCycle()) {
+      return;
+    }
+    int [] eu = new int[100];
+    int m,i,j,r;
+    Stack s = new Stack();
+    s.push(fro);
+    j=0;
+    while(!s.isEmpty()) {
+      r = s.top();
+      for(i=0;i<n;i++) {
+        if(a[r][i] > 0) break;  
+      }
+      if(i==n) { //r is isolated
+        s.pop();
+        eu[j++] = r;
+          
+      }
+      else {
+       s.push(i);
+       a[r][i]--;
+       a[i][r]--;
+      }
+    }
+    m = j;
+    for(i=0;i<m;i++) {
+        
+        fvisit(eu[i], f);
+    }
+  }
+
+
+//check conditions for the existence of Euler’s cycle
+ void checkEulerCycle(RandomAccessFile f) throws Exception{
+	if(isUndirected())
+      f.writeBytes("The graph is undirected.\r\n");
+       else
+         f.writeBytes("The graph is directed.\r\n");
+    if(isConnected())
+      f.writeBytes("The graph is connected.\r\n");
+       else
+         f.writeBytes("The graph is not connected.\r\n");
+
+    if(isEvenDegree())
+      f.writeBytes("All vertices have even degree.\r\n");
+       else
+         f.writeBytes("The graph has a vertex with odd degree.\r\n");
+    if(isUndirected() && isConnected() && isEvenDegree())
+      f.writeBytes("Conditions for Euler's cycle are satisfied.\r\n");
+        else
+         f.writeBytes("Conditions for Euler's cycle are not satisfied.\r\n");
+   }
+
+//count the connectivity parts 
+   public int connectedParts(){ //f123.writeBytes("k = " + k + "\r\n"); 
+    boolean [] pushed = new boolean[20];
+    boolean cont = false;
+    int i, j, k, r;
+    for(i=0;i<n;i++) pushed[i]=false;
+    MyStack s = new MyStack();
+    k=0;
+    while(true)
+     {s.clear();
+      i = 0;
+      while(i<n && pushed[i]) i++;
+      if(i==n) break;
+      s.push(i); pushed[i] = true;
+      while(!s.isEmpty())
+        {r = s.pop();
+         for(i=0;i<n;i++)
+          {if(i==r) continue;
+           if(!pushed[i] && a[r][i]>0) {s.push(i); pushed[i] = true;}
+          }
+        }
+       k++;
+     }
+    return(k);
+   }
