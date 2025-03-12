@@ -1,0 +1,12 @@
+===addBook
+===7. searchBookbyCode - 2 tests
+Book{code=TEST, name=Test book, lended=10, quantity=10, price=35.5}
+Book{code=TEST, name=Test book, lended=10, quantity=10, price=35.5}
+===8. removeBook - 2 tests
+===countBook- before removal
+0
+===countBook- after removal
+0
+===9. searchBookbyName - 2 tests
+Book{code=TEST, name=Test book, lended=10, quantity=10, price=35.5}
+Book{code=TEST, name=Test book, lended=10, quantity=10, price=35.5}
