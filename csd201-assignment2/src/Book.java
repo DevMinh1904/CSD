@@ -10,8 +10,8 @@
  * @author DUNGHUYNH
  */
 public class Book {
-    String code;
-    String name;
+    private String code;
+    private String name;
     private int lended;
     private int quantity;
     private double price;
@@ -69,8 +69,6 @@ public class Book {
         this.price = price;
     }
 	
-    public boolean isAvailable() {
-        return lended < quantity;
-    }
+    
     
 }
