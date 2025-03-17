@@ -1,13 +1,15 @@
 ===1. addBook
 ===2. showBook 1
-Test
+In-order traversal:
 ===3. showBook 2
-Test
+Breadth-first traversal:
 ===4. countBook
 0
 ===5. printAvailableBook
+Available Books (sorted by code):
 ===6. balancing
+Tree has been balanced
 ===countBook
 0
 ===showBook 2
-Test
+Breadth-first traversal:

@@ -1,0 +1,39 @@
+===0. addBook
+===true
+===true
+===true
+===true
+===true
+===true
+===true
+===true
+===true
+===true
+===true
+===true
+===true
+===true
+===7. searchBookbyCode - 3 tests
+Book{code=B, name=Book B, lended=14, quantity=20, price=250000.0}
+null
+Book{code=A, name=Book A, lended=10, quantity=20, price=200000.0}
+===8. removeBook - 3 test
+===countBook
+11
+===showBook 2
+Breadth-first traversal:
+Book{code=H, name=Book H, lended=22, quantity=22, price=1200000.0}
+Book{code=D, name=Book D, lended=33, quantity=33, price=1200000.0}
+Book{code=I, name=Book I, lended=40, quantity=40, price=300000.0}
+Book{code=A, name=Book A, lended=10, quantity=20, price=200000.0}
+Book{code=F, name=Book F, lended=22, quantity=22, price=1200000.0}
+Book{code=J, name=Book J, lended=22, quantity=22, price=1200000.0}
+Book{code=E, name=Book E, lended=40, quantity=40, price=300000.0}
+Book{code=G, name=Book G, lended=12, quantity=40, price=300000.0}
+Book{code=N, name=Book N, lended=22, quantity=22, price=1200000.0}
+Book{code=L, name=Book L, lended=22, quantity=22, price=1200000.0}
+Book{code=K, name=Book K, lended=12, quantity=40, price=300000.0}
+===9. searchBookbyName - 3 test
+Book{code=TEST, name=Test book, lended=10, quantity=10, price=35.5}
+Book{code=TEST, name=Test book, lended=10, quantity=10, price=35.5}
+Book{code=TEST, name=Test book, lended=10, quantity=10, price=35.5}

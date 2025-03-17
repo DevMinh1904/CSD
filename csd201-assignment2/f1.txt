@@ -3,17 +3,31 @@
 ===true
 ===true
 ===true
-===true
+===false
 ===2. showBook 1
-Book{code=TEST, name=Test book, lended=10, quantity=10, price=35.5}
+In-order traversal:
+Book{code=A, name=Book A, lended=10, quantity=20, price=200000.0}
+Book{code=B, name=Book B, lended=14, quantity=20, price=250000.0}
+Book{code=C, name=Book C, lended=40, quantity=40, price=300000.0}
+Book{code=D, name=Book D, lended=22, quantity=22, price=1200000.0}
 ===3. showBook 2
-Book{code=TEST, name=Test book, lended=10, quantity=10, price=35.5}
+Breadth-first traversal:
+Book{code=C, name=Book C, lended=40, quantity=40, price=300000.0}
+Book{code=A, name=Book A, lended=10, quantity=20, price=200000.0}
+Book{code=D, name=Book D, lended=22, quantity=22, price=1200000.0}
+Book{code=B, name=Book B, lended=14, quantity=20, price=250000.0}
 ===4. countBook
-0
+4
 ===5. printAvailableBook
-Book{code=TEST, name=Test book, lended=10, quantity=10, price=35.5}
+Available Books (sorted by code):
+Book{code=A, name=Book A, lended=10, quantity=20, price=200000.0}
+Book{code=B, name=Book B, lended=14, quantity=20, price=250000.0}
 ===6. balancing
 ===countBook
-0
+4
 ===showBook 2
-Book{code=TEST, name=Test book, lended=10, quantity=10, price=35.5}
+Breadth-first traversal:
+Book{code=C, name=Book C, lended=40, quantity=40, price=300000.0}
+Book{code=A, name=Book A, lended=10, quantity=20, price=200000.0}
+Book{code=D, name=Book D, lended=22, quantity=22, price=1200000.0}
+Book{code=B, name=Book B, lended=14, quantity=20, price=250000.0}
