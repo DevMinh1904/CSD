@@ -1,0 +1,12 @@
+===addBook
+===7. searchBookbyCode - 2 tests
+Book{code=77138b0b9fe745f2eccdec8e461b6f44, name=A Game of Thrones, lended=25, quantity=28, price=120009.0}
+Book{code=733edd74be44e2b2acd941d032fa4e1c, name=The Thorn Birds, lended=25, quantity=29, price=120012.0}
+===8. removeBook - 2 tests
+===countBook- before removal
+500
+===countBook- after removal
+498
+===9. searchBookbyName - 2 tests
+null
+null

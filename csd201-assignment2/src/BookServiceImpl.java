@@ -1,212 +1,286 @@
+import java.util.LinkedList;
 
 public class BookServiceImpl implements BookService {
 
     private class Node {
         Book book;
-        Node left, right;
-        
-        public Node(Book book) {
+        Node left;
+        Node right;
+
+        Node(Book book) {
             this.book = book;
             this.left = null;
             this.right = null;
         }
     }
-    
-    private Node root; 
-    
+
+    private Node root;
+
     public BookServiceImpl() {
-        root = null;
+        this.root = null;
     }
-    
-    // 1. Add book to BST
+
     @Override
     public boolean addBook(Book book) {
-        if (book == null || searchBookbyCode(book.getCode()) != null) {
-            return false; // Book already exists or is null
+        if (book == null || book.getCode() == null)
+            return false;
+        // Nếu cây rỗng, thêm vào gốc
+        if (root == null) {
+            root = new Node(book);
+            return true;
         }
-        
-        root = addBookRecursive(root, book);
-        return true;
+
+        // Thêm vào cây, kiểm tra trùng mã sách
+        Node temp = root;
+        // book.getCode() trả về String, không thể dùng toán tử như < hoặc > trực tiếp với String
+        while (true) {
+            if (book.getCode().equals(temp.book.getCode())) {
+                return false; // Mã sách đã tồn tại
+            } else if (book.getCode().compareTo(temp.book.getCode()) < 0) {
+                if (temp.left == null) {
+                    temp.left = new Node(book);
+                    return true;
+                }
+                temp = temp.left;
+            } else {
+                if (temp.right == null) {
+                    temp.right = new Node(book);
+                    return true;
+                }
+                temp = temp.right;
+            }
+        }
     }
-    
-    private Node addBookRecursive(Node current, Book book) {
-        if (current == null) {
-            return new Node(book);
-        }
-        
-        // Compare book codes for BST ordering
-        int compareResult = book.getCode().compareTo(current.book.getCode());
-        
-        if (compareResult < 0) {
-            current.left = addBookRecursive(current.left, book);
-        } else if (compareResult > 0) {
-            current.right = addBookRecursive(current.right, book);
-        }
-        
-        return current;
-    }
-    
-    // 2-3. Print books with different traversal methods
+
     @Override
     public void showBook(int method) {
         if (method == 1) {
-            // In-order traversal
             System.out.println("In-order traversal:");
             inOrderTraversal(root);
         } else if (method == 2) {
-            // Breadth-first traversal
             System.out.println("Breadth-first traversal:");
-            breadthFirstTraversal();
+            breadthFirstTraversal(root);
+        } else {
+            System.out.println("Invalid method!");
         }
     }
-    
+
     private void inOrderTraversal(Node node) {
-        if (node == null) {
-            return;
-        }
-        
-        inOrderTraversal(node.left);
-        System.out.println(node.book);
-        inOrderTraversal(node.right);
-    }
-    
-    private void breadthFirstTraversal() {
-        if (root == null) {
-            return;
-        }
-        
-        // Use a queue for BFS
-        java.util.Queue<Node> queue = new java.util.LinkedList<>();
-        queue.add(root);
-        
-        while (!queue.isEmpty()) {
-            Node node = queue.poll();
+        if (node != null) {
+            inOrderTraversal(node.left);
             System.out.println(node.book);
-            
-            if (node.left != null) {
-                queue.add(node.left);
-            }
-            
-            if (node.right != null) {
-                queue.add(node.right);
-            }
+            inOrderTraversal(node.right);
         }
     }
-    
-    // 4. Search book by code
+
+    private void breadthFirstTraversal(Node root) {
+        if (root == null) return;
+
+        MyQueue q = new MyQueue();
+        q.enqueue(root);
+        Node p;
+
+        while (!q.isEmpty()) {
+            p = q.dequeue();
+            visit(p);
+
+            if (p.left != null) q.enqueue(p.left);
+            if (p.right != null) q.enqueue(p.right);
+        }
+    }
+
+    // Visit method to process nodes
+    private void visit(Node node) {
+        System.out.println(node.book);
+    }
+
+    class MyQueue {
+        private LinkedList<Node> list = new LinkedList<>();
+
+        public void enqueue(Node node) {
+            list.addLast(node);
+        }
+
+        public Node dequeue() {
+            return list.pollFirst();
+        }
+
+        public boolean isEmpty() {
+            return list.isEmpty();
+        }
+    }
+
     @Override
     public Book searchBookbyCode(String bookCode) {
-        return searchBookbyCodeRecursive(root, bookCode);
-    }
-    
-    private Book searchBookbyCodeRecursive(Node node, String bookCode) {
-        if (node == null || bookCode == null) {
+        if (bookCode == null)
             return null;
+        Node temp = root;
+        while (temp != null) {
+            if (bookCode.compareTo(temp.book.getCode()) < 0) {
+                temp = temp.left;
+            } else if (bookCode.compareTo(temp.book.getCode()) > 0) {
+                temp = temp.right;
+            } else {
+                return temp.book;
+            }
         }
-        
-        int compareResult = bookCode.compareTo(node.book.getCode());
-        
-        if (compareResult == 0) {
-            return node.book;
-        } else if (compareResult < 0) {
-            return searchBookbyCodeRecursive(node.left, bookCode);
-        } else {
-            return searchBookbyCodeRecursive(node.right, bookCode);
-        }
+        return null;
     }
-    
-    // 5. Count books
+
     @Override
     public int countBook() {
-        return countBookRecursive(root);
+        return countNodes(root);
     }
-    
-    private int countBookRecursive(Node node) {
-        if (node == null) {
+
+    private int countNodes(Node node) {
+        if (node == null)
             return 0;
-        }
-        
-        return 1 + countBookRecursive(node.left) + countBookRecursive(node.right);
+        return 1 + countNodes(node.left) + countNodes(node.right);
     }
-    
-    // 6. Remove book by code
+
     @Override
     public boolean removeBook(String bookCode) {
-        if (searchBookbyCode(bookCode) == null) {
-            return false; // Book not found
+        if (bookCode == null) {
+            return false;
         }
-        
-        root = removeBookRecursive(root, bookCode);
+
+        Node parent = null;
+        Node temp = root;
+
+        // Tìm node parent và node cần xóa
+        while (temp != null && !bookCode.equals(temp.book.getCode())) {
+            parent = temp;
+            if (bookCode.compareTo(temp.book.getCode()) < 0) {
+                temp = temp.left;
+            } else {
+                temp = temp.right;
+            }
+        }
+
+        if (temp == null) {
+            return false; // Không tìm thấy
+        }
+
+        // Nếu Node không có con
+        if (temp.left == null && temp.right == null) {
+            if (temp == root) {
+                root = null;
+            } else if (parent.left == temp) {
+                parent.left = null;
+            } else {
+                parent.right = null;
+            }
+        }
+        // Nếu node có 1 con
+        else if (temp.left == null || temp.right == null) {
+            Node child = (temp.left != null) ? temp.left : temp.right;
+            if (temp == root) {
+                root = child;
+            } else if (parent.left == temp) {
+                parent.left = child;
+            } else {
+                parent.right = child;
+            }
+        }
+        // Nếu node có 2 con
+        else {
+            Node successorParent = temp;
+            Node successor = temp.right;
+
+            // Tìm successor nhỏ nhất trong cây con phải
+            while (successor.left != null) {
+                successorParent = successor;
+                successor = successor.left;
+            }
+
+            // Thay thế giá trị node cần xóa bằng successor
+            temp.book = successor.book;
+
+            // Xóa successor khỏi cây (successor có tối đa 1 con)
+            if (successorParent.left == successor) {
+                successorParent.left = successor.right;
+            } else {
+                successorParent.right = successor.right;
+            }
+        }
+
         return true;
     }
-    
-    private Node removeBookRecursive(Node node, String bookCode) {
-        if (node == null) {
-            return null;
-        }
-        
-        int compareResult = bookCode.compareTo(node.book.getCode());
-        
-        if (compareResult < 0) {
-            node.left = removeBookRecursive(node.left, bookCode);
-        } else if (compareResult > 0) {
-            node.right = removeBookRecursive(node.right, bookCode);
-        } else {
-            // Node with only one child or no child
-            if (node.left == null) {
-                return node.right;
-            } else if (node.right == null) {
-                return node.left;
-            }
-            
-            // Node with two children
-            // Get the inorder successor (smallest in the right subtree)
-            node.book = findMinValue(node.right);
-            
-            // Delete the inorder successor
-            node.right = removeBookRecursive(node.right, node.book.getCode());
-        }
-        
-        return node;
-    }
-    
-    private Book findMinValue(Node node) {
-        Book minValue = node.book;
+
+
+    // Helper method to find the minimum node in a subtree
+    private Node findMinNode(Node node) {
         while (node.left != null) {
-            minValue = node.left.book;
             node = node.left;
         }
-        return minValue;
+        return node;
     }
-    
-    // 7. Print available books (lended < quantity)
+
     @Override
     public void printAvailableBook() {
-        System.out.println("Available Books (sorted by code):");
-        printAvailableBookRecursive(root);
+        printAvailableBooks(root);
     }
-    
-    private void printAvailableBookRecursive(Node node) {
-        if (node == null) {
-            return;
+
+    private void printAvailableBooks(Node node) {
+        if (node != null) {
+            printAvailableBooks(node.left);
+            if (node.book.getLended() < node.book.getQuantity()) {
+                System.out.println(node.book);
+            }
+            printAvailableBooks(node.right);
         }
-        
-        // In-order traversal to print in sorted order by code
-        printAvailableBookRecursive(node.left);
-        
-        if (node.book.getLended() < node.book.getQuantity()) {
-            System.out.println(node.book);
-        }
-        
-        printAvailableBookRecursive(node.right);
     }
+
     @Override
     public void balancing() {
+        // Bước 1: Chuyển cây thành danh sách các node bằng duyệt in-order
+        java.util.List<Node> nodes = new java.util.ArrayList<>();
+        inOrderTraversalForBalancing(root, nodes);
+
+        // Bước 2: Xây dựng lại cây cân bằng từ danh sách
+        root = buildBalancedTree(nodes, 0, nodes.size() - 1);
     }
+
+    private void inOrderTraversalForBalancing(Node node, java.util.List<Node> nodes) {
+        if (node != null) {
+            inOrderTraversalForBalancing(node.left, nodes);
+            nodes.add(node);
+            inOrderTraversalForBalancing(node.right, nodes);
+        }
+    }
+
+    private Node buildBalancedTree(java.util.List<Node> nodes, int start, int end) {
+        if (start > end) {
+            return null;
+        }
+
+        // Chọn phần tử giữa làm gốc để đảm bảo cây cân bằng
+        int mid = (start + end) / 2;
+        Node node = nodes.get(mid);
+
+        // Đệ quy xây dựng cây con bên trái và bên phải
+        node.left = buildBalancedTree(nodes, start, mid - 1);
+        node.right = buildBalancedTree(nodes, mid + 1, end);
+
+        return node;
+    }
+
     @Override
     public Book searchBookbyName(String name) {
-         return new Book("TEST","Test book",10,10,35.5);
-    }    
-    
-    
+        if (name == null) return null;
+        return searchByName(root, name);
+    }
+
+    private Book searchByName(Node node, String name) {
+        if (node == null) return null;
+
+        Book found = searchByName(node.left, name);
+        if (found != null) {
+            return found;
+        } else if (node.book.getName().equals(name)) {
+            return node.book;
+        } else {
+            return searchByName(node.right, name);
+        }
+    }
 }

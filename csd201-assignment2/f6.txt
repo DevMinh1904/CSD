@@ -34,6 +34,6 @@ Book{code=N, name=Book N, lended=22, quantity=22, price=1200000.0}
 Book{code=L, name=Book L, lended=22, quantity=22, price=1200000.0}
 Book{code=K, name=Book K, lended=12, quantity=40, price=300000.0}
 ===9. searchBookbyName - 3 test
-Book{code=TEST, name=Test book, lended=10, quantity=10, price=35.5}
-Book{code=TEST, name=Test book, lended=10, quantity=10, price=35.5}
-Book{code=TEST, name=Test book, lended=10, quantity=10, price=35.5}
+Book{code=H, name=Book H, lended=22, quantity=22, price=1200000.0}
+Book{code=A, name=Book A, lended=10, quantity=20, price=200000.0}
+null

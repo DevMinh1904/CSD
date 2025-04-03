@@ -34,7 +34,6 @@ Book{code=F, name=Book F, lended=22, quantity=22, price=1200000.0}
 ===4. countBook
 8
 ===5. printAvailableBook
-Available Books (sorted by code):
 Book{code=A, name=Book A, lended=10, quantity=20, price=200000.0}
 Book{code=B, name=Book B, lended=14, quantity=20, price=250000.0}
 Book{code=G, name=Book G, lended=12, quantity=40, price=300000.0}
@@ -45,9 +44,9 @@ Book{code=G, name=Book G, lended=12, quantity=40, price=300000.0}
 Breadth-first traversal:
 Book{code=D, name=Book D, lended=33, quantity=33, price=1200000.0}
 Book{code=B, name=Book B, lended=14, quantity=20, price=250000.0}
-Book{code=G, name=Book G, lended=12, quantity=40, price=300000.0}
+Book{code=F, name=Book F, lended=22, quantity=22, price=1200000.0}
 Book{code=A, name=Book A, lended=10, quantity=20, price=200000.0}
 Book{code=C, name=Book C, lended=40, quantity=40, price=300000.0}
 Book{code=E, name=Book E, lended=40, quantity=40, price=300000.0}
+Book{code=G, name=Book G, lended=12, quantity=40, price=300000.0}
 Book{code=H, name=Book H, lended=22, quantity=22, price=1200000.0}
-Book{code=F, name=Book F, lended=22, quantity=22, price=1200000.0}

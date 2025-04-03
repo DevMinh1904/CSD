@@ -6,9 +6,7 @@ Breadth-first traversal:
 ===4. countBook
 0
 ===5. printAvailableBook
-Available Books (sorted by code):
 ===6. balancing
-Tree has been balanced
 ===countBook
 0
 ===showBook 2

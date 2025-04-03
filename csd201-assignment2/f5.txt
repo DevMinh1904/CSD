@@ -771,7 +771,6 @@ Book{code=87b2caff441cd5a9f18c094ca376d8a3, name=Death Comes for the Archbishop,
 ===4. countBook
 255
 ===5. printAvailableBook
-Available Books (sorted by code):
 Book{code=002fb1609eeb72e3a460e25c0a0b6fd7, name=Black Beauty, lended=25, quantity=52, price=120081.0}
 Book{code=00933f025db0d25946d4cd0a173ab9c6, name=Jane Eyre, lended=25, quantity=32, price=120021.0}
 Book{code=00cbb889c53ef14e65cc1e448b8068aa, name=The Grapes of Wrath, lended=25, quantity=35, price=120030.0}
@@ -1023,258 +1022,258 @@ Book{code=ff29e993ac88705860c68e72ced5beaa, name=Watership Down, lended=25, quan
 255
 ===showBook 2
 Breadth-first traversal:
-Book{code=415cd0f5e02cf3e12bff22a1ec13b7e9, name=Don Quixote, lended=25, quantity=25, price=120000.0}
-Book{code=3702014bd33ea973367708e00696e73d, name=Wuthering Heights, lended=25, quantity=31, price=120018.0}
-Book{code=c85c26d0e7446de0d6f50ac0a1302ccf, name=Alice's Adventures in Wonderland, lended=25, quantity=26, price=120003.0}
-Book{code=00933f025db0d25946d4cd0a173ab9c6, name=Jane Eyre, lended=25, quantity=32, price=120021.0}
-Book{code=413e1d3f45c5ab0862069a18e2952ee8, name=A Portrait of the Artist as a Young Man, lended=25, quantity=28, price=120009.0}
-Book{code=a0902b46ee36e756d5129b34e18bb020, name=The Adventures of Huckleberry Finn, lended=25, quantity=27, price=120006.0}
-Book{code=e651579c017e96f26c9dc09dfd2fc330, name=The Pilgrim's Progress, lended=25, quantity=36, price=120033.0}
-Book{code=002fb1609eeb72e3a460e25c0a0b6fd7, name=Black Beauty, lended=25, quantity=52, price=120081.0}
-Book{code=06e423c0a39aa00e8004dcd40675f754, name=The Scarlet Letter, lended=25, quantity=34, price=120027.0}
-Book{code=40ad1587ee8ea6ed4f622d09d82ed2c6, name=The Trial, lended=25, quantity=33, price=120024.0}
-Book{code=414f1f18c30e606508a50205f342df45, name=For Whom the Bell Tolls, lended=25, quantity=26, price=120003.0}
-Book{code=93aab349859f71bc72e969bb24b07dff, name=The Adventures of Tom Sawyer, lended=25, quantity=28, price=120009.0}
-Book{code=b133083c523736e44702175beecb9e07, name=Pride and Prejudice, lended=25, quantity=30, price=120015.0}
-Book{code=cee6def7f230cfa39fedbd94ddd29b93, name=A Christmas Carol, lended=25, quantity=37, price=120036.0}
-Book{code=ed321036f662224f5c12858649d8e491, name=Oliver Twist, lended=25, quantity=44, price=120057.0}
-Book{code=0387af5b12fd0bcc017786e0dbfcf69f, name=The Little Prince, lended=25, quantity=29, price=120012.0}
-Book{code=22cd2fde96e300523ef003089cbc928e, name=David Copperfield, lended=25, quantity=38, price=120039.0}
-Book{code=370c26780c7a24b4799a862bf774af04, name=A Journey to the Center of the Earth, lended=25, quantity=38, price=120039.0}
-Book{code=8ae6e417a5fe16fa1be3bd2c6ac61840, name=Treasure Island, lended=25, quantity=29, price=120012.0}
+Book{code=72d9f332babfb8866912924a09ef9a53, name=Crime and Punishment, lended=25, quantity=46, price=120063.0}
+Book{code=382f874dc0d2c4784990ede7968327f3, name=The Horse and His Boy, lended=25, quantity=33, price=120024.0}
+Book{code=b605e222f051cc8c834abd4bbf3c8546, name=In Cold Blood, lended=25, quantity=33, price=120024.0}
+Book{code=156f81c27d05d15751c80ff770edf45f, name=Song of Solomon, lended=25, quantity=37, price=120036.0}
+Book{code=5017156ac3cdb363e9cb07b68754ec8c, name=Captains Courageous, lended=25, quantity=28, price=120009.0}
+Book{code=8fe1a9c047024707b90a38d45bcefdba, name=Dombey And Son, lended=25, quantity=54, price=120087.0}
+Book{code=d1b5602d2217ac45d0fb2a792a1d658d, name=Roll of Thunder, Hear My Cry, lended=25, quantity=42, price=120051.0}
+Book{code=08a924bf602a635be19fab5109944760, name=Absalom, Absalom!, lended=25, quantity=33, price=120024.0}
+Book{code=24b67cac370bcb333c8d22a21ecacdad, name=The Strange Case of Dr. Jekyll and Mr. Hyde, lended=25, quantity=45, price=120060.0}
+Book{code=4243174ad2c07cc2273a22a229d11cb4, name=Tess of the d'Urbervilles, lended=25, quantity=38, price=120039.0}
+Book{code=5e86b2a91d4ade21b42183a6a11931ae, name=Little Women, lended=25, quantity=40, price=120045.0}
+Book{code=84a4e39b2ad8cd26c4f2d81fdbac6265, name=The Road, lended=25, quantity=31, price=120018.0}
+Book{code=a38cf621b8e9172738d444886115322f, name=The Metamorphosis, lended=25, quantity=30, price=120015.0}
+Book{code=c59d076ddf9d47dbffb709684cb6b559, name=The Jungle, lended=25, quantity=51, price=120078.0}
+Book{code=ece9ff7a4fd352b4c13afb0fd32c0022, name=Through the Looking-Glass, and What Alice Found There, lended=25, quantity=32, price=120021.0}
+Book{code=046e869191e9b1848c62d6518494bdce, name=Steppenwolf, lended=25, quantity=25, price=120000.0}
+Book{code=0efabb81a95400dd9d02e39eb964e1c1, name=Around the World in Eighty Days, lended=25, quantity=53, price=120084.0}
+Book{code=1e4ce4724ddf2777595afc2885a2c4ce, name=The Two Towers, lended=25, quantity=44, price=120057.0}
+Book{code=2fe3f58aa7442e90085e2cb9408c543c, name=The Way of All Flesh, lended=25, quantity=32, price=120021.0}
+Book{code=3eb6299ed4fc10845d253db5d32c361c, name=A Room With a View, lended=25, quantity=36, price=120033.0}
+Book{code=4acec798715d41982aa61afaec8e8e00, name=The Picture of Dorian Gray, lended=25, quantity=34, price=120027.0}
+Book{code=56893fe65969cfcfd16bffb9aeed9617, name=The Girl With the Dragon Tattoo, lended=25, quantity=35, price=120030.0}
+Book{code=66de4e1250e0d9bc56180f4b606b338b, name=Angels & Demons, lended=25, quantity=34, price=120027.0}
+Book{code=7a2ecf5be0ebc4cdb1b62bb97b38dace, name=Silas Marner, lended=25, quantity=32, price=120021.0}
+Book{code=87c6ae0c1d8b6b9ba211a0cd10249a89, name=The Castle, lended=25, quantity=29, price=120012.0}
 Book{code=95d2e7bc40b89712d83ad643247848f9, name=Ulysses, lended=25, quantity=41, price=120048.0}
-Book{code=b114116d481363da549665be6db36f22, name=Gulliver's Travels, lended=25, quantity=35, price=120030.0}
-Book{code=be78cd94afc6730cb9b6f9d428dbd8d5, name=A Tale of Two Cities, lended=25, quantity=39, price=120042.0}
-Book{code=ce9ef2916693d33af97726e36839a640, name=Anna Karenina, lended=25, quantity=32, price=120021.0}
-Book{code=e542d826196f174feabb214b90bce300, name=Brave New World, lended=25, quantity=51, price=120078.0}
+Book{code=ae22d013de0199425288083ef16a18de, name=The Handmaid's Tale, lended=25, quantity=40, price=120045.0}
+Book{code=be71773a814872f705c2d1eb5e54ce0a, name=Catching Fire, lended=25, quantity=41, price=120048.0}
+Book{code=caf36ccbb2ef13f181263ef958bca976, name=The BFG, lended=25, quantity=48, price=120069.0}
+Book{code=e4c39426942e95b09558cf1570a86ea7, name=The Curious Incident of the Dog In the Night-Time, lended=25, quantity=35, price=120030.0}
+Book{code=f861e3a265180ead7098c9f8ce28bfd4, name=The Alchemist, lended=25, quantity=44, price=120057.0}
+Book{code=015696972454b3c760fdac5ef28657b4, name=The Phantom of the Opera, lended=25, quantity=29, price=120012.0}
+Book{code=06ce17e82f3fc1cf6db909fcbf008270, name=The Bluest Eye, lended=25, quantity=27, price=120006.0}
+Book{code=0d4a675326f4f8bf68d4cfad6ed2e592, name=The Help, lended=25, quantity=50, price=120075.0}
+Book{code=10c27edd67bf2e2697c2efb759feb691, name=The Fellowship of the Ring, lended=25, quantity=28, price=120009.0}
+Book{code=18aa6d5d320cfbba7a753584da8f3e93, name=Dream of the Red Chamber, lended=25, quantity=51, price=120078.0}
+Book{code=22cd2fde96e300523ef003089cbc928e, name=David Copperfield, lended=25, quantity=38, price=120039.0}
+Book{code=2984330e678e7b198079527e50506cab, name=The Tale of Genji, lended=25, quantity=42, price=120051.0}
+Book{code=33b1a9a6cdad3bf7012dc9a3b5b11d2e, name=The Magic Mountain (Der Zauberberg), lended=25, quantity=31, price=120018.0}
+Book{code=39d38eb7c7cc90641e86399b0245c830, name=The Book Thief, lended=25, quantity=37, price=120036.0}
+Book{code=414f1f18c30e606508a50205f342df45, name=For Whom the Bell Tolls, lended=25, quantity=26, price=120003.0}
+Book{code=472c589eb8ebda8876aa90437b7f8e2b, name=Père Goriot, lended=25, quantity=34, price=120027.0}
+Book{code=4eed13b973a6bcd8042840e9750f42c3, name=The Good Earth, lended=25, quantity=31, price=120018.0}
+Book{code=535a1e8e57e4cb346e24728ac8d850f2, name=Women in Love, lended=25, quantity=37, price=120036.0}
+Book{code=5b3cc4f58a5d1b60b6aaba7cebb14a52, name=The Lovely Bones, lended=25, quantity=52, price=120081.0}
+Book{code=63e1a28f49c203b1ec863e94b24133b6, name=An American Tragedy, lended=25, quantity=26, price=120003.0}
+Book{code=6e8b432d8fc548122b13058e381c47c8, name=The Plague, lended=25, quantity=38, price=120039.0}
+Book{code=75a99d3d552324ffaf056a8177621cae, name=Memoirs of a Geisha, lended=25, quantity=38, price=120039.0}
+Book{code=7e346f12bd9c19caf4cdc8e6ef16bd76, name=The Yearling, lended=25, quantity=38, price=120039.0}
+Book{code=862b8403b9f5febe07a466aed3a0ffa1, name=Mansfield Park, lended=25, quantity=54, price=120087.0}
+Book{code=8a68d2dd6b87c9f949c839dbb4b5c605, name=The Pearl, lended=25, quantity=40, price=120045.0}
+Book{code=93aab349859f71bc72e969bb24b07dff, name=The Adventures of Tom Sawyer, lended=25, quantity=28, price=120009.0}
+Book{code=9bbe327293b0c1dcc59ede7c5618e6cf, name=The Magician's Nephew, lended=25, quantity=28, price=120009.0}
+Book{code=ab0dc79b559f490adf24ffc9b96ed3e9, name=Beloved, lended=25, quantity=25, price=120000.0}
+Book{code=b133083c523736e44702175beecb9e07, name=Pride and Prejudice, lended=25, quantity=30, price=120015.0}
+Book{code=bade8553b9a72d4fa3a0c893c3eaa176, name=Far from the Madding Crowd, lended=25, quantity=27, price=120006.0}
+Book{code=c1e844aab533d4f064db7b3d81751457, name=A Connecticut Yankee in King Arthur's Court, lended=25, quantity=45, price=120060.0}
+Book{code=c777d71959caffbe1683b3ed9bf78d52, name=James and the Giant Peach, lended=25, quantity=32, price=120021.0}
+Book{code=cee9cf2d30c165db805e581a6f58c9aa, name=The Great Gatsby, lended=25, quantity=28, price=120009.0}
+Book{code=dd15da8906bfe85216386f5a9352e407, name=All Quiet on the Western Front, lended=25, quantity=40, price=120045.0}
 Book{code=e8aee4277a38e1d041bcdab5bc060287, name=Lord of the Flies, lended=25, quantity=26, price=120003.0}
-Book{code=f06931db24c9654d95251880103c652e, name=The Three Musketeers, lended=25, quantity=50, price=120075.0}
-Book{code=00cbb889c53ef14e65cc1e448b8068aa, name=The Grapes of Wrath, lended=25, quantity=35, price=120030.0}
-Book{code=04c743c9cdb01678582186d4632bd27b, name=The Sun Also Rises, lended=25, quantity=30, price=120015.0}
-Book{code=085cda0c336aa4c6e1ee609825b4d739, name=The Hobbit, or, There and Back Again, lended=25, quantity=42, price=120051.0}
-Book{code=357846e9284b1b7890a148df9f3e7280, name=Great Expectations, lended=25, quantity=41, price=120048.0}
+Book{code=eff4356ea284faa6f7f06d30cbcab87f, name=The Appeal, lended=25, quantity=53, price=120084.0}
+Book{code=fb3fa02032dba0c7fd621d7056b95a6c, name=My Ántonia, lended=25, quantity=42, price=120051.0}
+Book{code=00933f025db0d25946d4cd0a173ab9c6, name=Jane Eyre, lended=25, quantity=32, price=120021.0}
+Book{code=01d76aed4a4a3aea12890c4ec40e22d0, name=Mrs. Dalloway, lended=25, quantity=26, price=120003.0}
+Book{code=05681644e2bdc89690812428166e54af, name=The Heart Is a Lonely Hunter, lended=25, quantity=31, price=120018.0}
+Book{code=0845e29ef178b03b996c88576d3e3e39, name=Charlotte's Web, lended=25, quantity=31, price=120018.0}
+Book{code=0b7a00c7e827c5475a20d4d2db1dd6a3, name=Nineteen Eighty-Four, lended=25, quantity=50, price=120075.0}
+Book{code=0d9541e60519e780e6d7d2a7906dfa6e, name=The Prince and the Pauper, lended=25, quantity=27, price=120006.0}
+Book{code=1023ad351ca77506cb9208a0bfd03dc0, name=The Moonstone, lended=25, quantity=41, price=120048.0}
+Book{code=144152fe9488515aa0a85346feca6bd2, name=Villette, lended=25, quantity=34, price=120027.0}
+Book{code=170cc79e5395af6ed215709709612873, name=The House of the Seven Gables, lended=25, quantity=25, price=120000.0}
+Book{code=1c4ddc1e3be3006c444294313acdad9a, name=Prince Caspian: The Return to Narnia, lended=25, quantity=44, price=120057.0}
+Book{code=2089a2c1a93450b971ab2472fbc833e6, name=Hard Times, lended=25, quantity=54, price=120087.0}
+Book{code=23f1076a0792266714b7d931249c34b9, name=Things Fall Apart, lended=25, quantity=43, price=120054.0}
+Book{code=26a32bd7c2b2619590752eb087c48e9f, name=Harry Potter and the Order of the Phoenix, lended=25, quantity=29, price=120012.0}
+Book{code=2da902628839850535888d474ef99d87, name=The Idiot, lended=25, quantity=48, price=120069.0}
+Book{code=30f8b46d900cee32bf8b8c6859f27416, name=Harry Potter and the Prisoner of Azkaban, lended=25, quantity=37, price=120036.0}
+Book{code=3702014bd33ea973367708e00696e73d, name=Wuthering Heights, lended=25, quantity=31, price=120018.0}
 Book{code=396f4e78878d0d845149875812d61878, name=Doctor Zhivago, lended=25, quantity=48, price=120069.0}
-Book{code=42f9fa9cfbfae840ec44c040e271ee62, name=Moby Dick, lended=25, quantity=33, price=120024.0}
-Book{code=8c393d20870e473defc2268ef1ad3147, name=Uncle Tom's Cabin, lended=25, quantity=45, price=120060.0}
+Book{code=3da3ce694e95fc157eec5d9ec2078260, name=Robinson Crusoe, lended=25, quantity=46, price=120063.0}
+Book{code=40ad1587ee8ea6ed4f622d09d82ed2c6, name=The Trial, lended=25, quantity=33, price=120024.0}
+Book{code=4177ab43468e9d5d0ce902b312b74be6, name=Quo Vadis, lended=25, quantity=39, price=120042.0}
+Book{code=4362e0cb59221e8470326c594275b3ab, name=Harry Potter and the Sorcerer's Stone, lended=25, quantity=39, price=120042.0}
+Book{code=487a21c08f310a41e316fd10f2c266c6, name=The Last Battle, lended=25, quantity=27, price=120006.0}
+Book{code=4d9bb68ff948d6ca06aedae9aea3873d, name=Little Dorrit, lended=25, quantity=43, price=120054.0}
+Book{code=4fb9f1ba0ace5ffdfae01926507b1303, name=The Mayor of Casterbridge, lended=25, quantity=25, price=120000.0}
+Book{code=5261f30a90a8f832f616ee61224ee40f, name=Utopia, lended=25, quantity=35, price=120030.0}
+Book{code=54ac7a412c078d1b25662b7d4977cdf7, name=This Side of Paradise, lended=25, quantity=48, price=120069.0}
+Book{code=5a5b3cf40c976a36eecb42eb59fe2e53, name=The Da Vinci Code, lended=25, quantity=52, price=120081.0}
+Book{code=5cdf675f5bb7ec354240eff21accaf33, name=The Sound and the Fury, lended=25, quantity=39, price=120042.0}
+Book{code=60e45c1d0b3d4a5033a7925812629f35, name=Ben-Hur, lended=25, quantity=54, price=120087.0}
+Book{code=65bbbbcd6234a810c9c5e6d3f692cd40, name=Babbitt, lended=25, quantity=40, price=120045.0}
+Book{code=6b2fe5f35923808696bb8966a25ba978, name=The Kite Runner, lended=25, quantity=50, price=120075.0}
+Book{code=6feda8903c2556ae74c96a754f799356, name=A Farewell to Arms, lended=25, quantity=54, price=120087.0}
+Book{code=73f5a08f3dea723868612fc30a2329b2, name=War and Peace, lended=25, quantity=52, price=120081.0}
+Book{code=79a92b13be69d38143b56ca9a0462561, name=Sister Carrie, lended=25, quantity=45, price=120060.0}
+Book{code=7b885dd61b5c6c2dbfdeb2dca74d73fc, name=Of Mice and Men, lended=25, quantity=43, price=120054.0}
+Book{code=8232809a1582f5c76e1126a7ebb7d8b6, name=The Wizard of Oz, lended=25, quantity=54, price=120087.0}
+Book{code=855ebb861cbf9d6c1c0abb68436a8748, name=Adam Bede, lended=25, quantity=35, price=120030.0}
+Book{code=86c475c95026b77419edb9dda462d527, name=One Day in the Life of Ivan Denisovich, lended=25, quantity=39, price=120042.0}
+Book{code=8887cc3ddb07aa7cbdd542ec48dd473b, name=The Color Purple, lended=25, quantity=48, price=120069.0}
+Book{code=8c1847b5d1cae042543c74ae49268aa9, name=The Sorrows of Young Werther, lended=25, quantity=26, price=120003.0}
+Book{code=91275f95741b5a8017cbb122b6b21b85, name=The Voyage of the Dawn Treader, lended=25, quantity=35, price=120030.0}
 Book{code=93be596e258dbaa1088952b84b84fda4, name=White Fang, lended=25, quantity=46, price=120063.0}
 Book{code=9773cc66e2b62c2ee12799062e5aa20b, name=The Count of Monte Cristo, lended=25, quantity=43, price=120054.0}
-Book{code=aeec4f59a21355b8ce3a6f0eb1832d02, name=Fahrenheit 451, lended=25, quantity=37, price=120036.0}
-Book{code=bbc1a5c90994c440f3344da6c5542663, name=The Call of the Wild, lended=25, quantity=30, price=120015.0}
-Book{code=c65654dd1c1a4d7c0b1bf24fe96dc28f, name=The Last of the Mohicans, lended=25, quantity=37, price=120036.0}
-Book{code=cc493343bcf91039e61382cae470e200, name=Catch-22, lended=25, quantity=52, price=120081.0}
-Book{code=dc27e5e3f1e3d3954779ed05571b69d7, name=The Secret Garden, lended=25, quantity=26, price=120003.0}
-Book{code=e6a4f5e07f8cd034c34002458d9667f7, name=The Pickwick Papers, lended=25, quantity=46, price=120063.0}
-Book{code=eae78ccb7f483b5a044e596893d5c888, name=Lord Jim, lended=25, quantity=29, price=120012.0}
+Book{code=a0902b46ee36e756d5129b34e18bb020, name=The Adventures of Huckleberry Finn, lended=25, quantity=27, price=120006.0}
+Book{code=a73e1d36bde60cb7bb45f117e77cf51f, name=The Woman In White, lended=25, quantity=32, price=120021.0}
+Book{code=abc74e90090050c83a5740b89cda5056, name=A Tree Grows in Brooklyn, lended=25, quantity=31, price=120018.0}
+Book{code=af0d7e2fac9870d3d80ded2c95269886, name=Harry Potter and the Deathly Hallows, lended=25, quantity=53, price=120084.0}
+Book{code=b366d11ab901128df5c5b2e72daea432, name=The War of the Worlds, lended=25, quantity=45, price=120060.0}
+Book{code=b78a8f43504562412d48f01622dbcd52, name=Ivanhoe, lended=25, quantity=49, price=120072.0}
+Book{code=bcb50b5b2450325f519d0915ea24260c, name=Stuart Little, lended=25, quantity=25, price=120000.0}
+Book{code=c0a263b333ce6dcf33b7e7d772163f50, name=Siddhartha, lended=25, quantity=30, price=120015.0}
+Book{code=c47aebf5a1416771c12c22ffbef2c5a8, name=The Catcher in the Rye, lended=25, quantity=36, price=120033.0}
+Book{code=c6b872a4bbd2cb2bf37e44f6d2f2c7ba, name=Barchester Towers and the Warden, lended=25, quantity=48, price=120069.0}
+Book{code=c85534b9669c2de2e184889995a6c010, name=The Old Man and the Sea, lended=25, quantity=44, price=120057.0}
+Book{code=ce9ef2916693d33af97726e36839a640, name=Anna Karenina, lended=25, quantity=32, price=120021.0}
+Book{code=cf8b5624a90e172e39c4e2cff22eddff, name=Love in the Time of Cholera, lended=25, quantity=33, price=120024.0}
+Book{code=dc0cb51764a6d220fc314141ea68ebff, name=Hatchet, lended=25, quantity=49, price=120072.0}
+Book{code=e3c5e19079819a6703804ce0cd50d5d5, name=Harry Potter and the Chamber of Secrets, lended=25, quantity=30, price=120015.0}
+Book{code=e651579c017e96f26c9dc09dfd2fc330, name=The Pilgrim's Progress, lended=25, quantity=36, price=120033.0}
+Book{code=ebcbb3efbc0dc4a56bc07fd5fe8ec272, name=The Red & the Black, lended=25, quantity=31, price=120018.0}
 Book{code=edca58c655fcceae3110d8b5fe86f01d, name=Jude the Obscure, lended=25, quantity=35, price=120030.0}
-Book{code=f922fa2d4deaee5c8e3b56f233c1f110, name=Animal Farm, lended=25, quantity=27, price=120006.0}
-Book{code=01d76aed4a4a3aea12890c4ec40e22d0, name=Mrs. Dalloway, lended=25, quantity=26, price=120003.0}
-Book{code=046e869191e9b1848c62d6518494bdce, name=Steppenwolf, lended=25, quantity=25, price=120000.0}
+Book{code=f55fbaaca148300ac11f7752528cae3d, name=Kim, lended=25, quantity=38, price=120039.0}
+Book{code=f9e99436909d6b8abdf186dcc461d9a9, name=The Hunger Games, lended=25, quantity=47, price=120066.0}
+Book{code=fd878092acc5af378d52d2bf9fde830c, name=The Return of the Native, lended=25, quantity=29, price=120012.0}
+Book{code=002fb1609eeb72e3a460e25c0a0b6fd7, name=Black Beauty, lended=25, quantity=52, price=120081.0}
+Book{code=00cbb889c53ef14e65cc1e448b8068aa, name=The Grapes of Wrath, lended=25, quantity=35, price=120030.0}
+Book{code=01d0722c1f9961f2b763fbe51869299a, name=Twilight, lended=25, quantity=36, price=120033.0}
+Book{code=0387af5b12fd0bcc017786e0dbfcf69f, name=The Little Prince, lended=25, quantity=29, price=120012.0}
+Book{code=04c743c9cdb01678582186d4632bd27b, name=The Sun Also Rises, lended=25, quantity=30, price=120015.0}
 Book{code=065314741d917792b0d205ea2f3a4d59, name=The House of Mirth, lended=25, quantity=44, price=120057.0}
-Book{code=0845e29ef178b03b996c88576d3e3e39, name=Charlotte's Web, lended=25, quantity=31, price=120018.0}
+Book{code=06e423c0a39aa00e8004dcd40675f754, name=The Scarlet Letter, lended=25, quantity=34, price=120027.0}
+Book{code=085cda0c336aa4c6e1ee609825b4d739, name=The Hobbit, or, There and Back Again, lended=25, quantity=42, price=120051.0}
+Book{code=0a201c0a6cf7969767dfd4feddbf8186, name=Sense and Sensibility, lended=25, quantity=36, price=120033.0}
+Book{code=0cada197ddf7d313a36e7f78f933b7ce, name=Germinal, lended=25, quantity=30, price=120015.0}
+Book{code=0d6adc21b32265afa7211d481e831eff, name=The Outsiders, lended=25, quantity=53, price=120084.0}
+Book{code=0e9e03d28d98fedebc1c936f0a37d04c, name=Life of Pi, lended=25, quantity=52, price=120081.0}
+Book{code=0f7893272a042f497237148373ff45fb, name=Slaughterhouse-Five, lended=25, quantity=25, price=120000.0}
+Book{code=109e3124e11ab536913afab2803ec485, name=One Flew Over the Cuckoo's Nest, lended=25, quantity=51, price=120078.0}
+Book{code=1271c27e339d3c3f72ff85baa284f5c5, name=Native Son, lended=25, quantity=54, price=120087.0}
+Book{code=1474e19901758d79b47484ad4fcc5bb4, name=Anne of Green Gables, lended=25, quantity=51, price=120078.0}
 Book{code=16731baec8a42de493e2ac39338feafc, name=The Return of the King, lended=25, quantity=48, price=120069.0}
+Book{code=1843fc0dfa2399e3bd0fdb470438d7be, name=Johnny Tremain, lended=25, quantity=45, price=120060.0}
+Book{code=19db13ccfbc2a7f340907656158139d4, name=The Decameron, lended=25, quantity=49, price=120072.0}
+Book{code=1d71804d4d2a7bcb30dd3ad8bbb1c995, name=The History of Tom Jones, a Foundling, lended=25, quantity=36, price=120033.0}
+Book{code=1f24a006c4a977d78cf48e9d196391e4, name=The Giver, lended=25, quantity=43, price=120054.0}
+Book{code=217cb452ee5fbe966e859d9c60d33da8, name=Kidnapped: The Adventures of David Balfour, lended=25, quantity=35, price=120030.0}
+Book{code=23668fe5b5c6a277779d2cacec2ca806, name=The Bell Jar, lended=25, quantity=36, price=120033.0}
+Book{code=24b11e2b47e2d4315c374e95a3c3c564, name=Cross Fire, lended=25, quantity=26, price=120003.0}
+Book{code=25ca1b9af3a0db530d3296858bacce00, name=Cry, The Beloved Country, lended=25, quantity=26, price=120003.0}
+Book{code=28df63e501029ea9f4477bc926e534b2, name=The Hound of the Baskervilles, lended=25, quantity=43, price=120054.0}
+Book{code=2c59ceaa4035b1265cf5006a23632eef, name=Holes, lended=25, quantity=29, price=120012.0}
+Book{code=2ea0bfd1458207c73b0f2c50779595d2, name=The Portrait of a Lady, lended=25, quantity=52, price=120081.0}
 Book{code=2ffab36d938d15e6ae1dca07c64b660b, name=The Lion, the Witch, and the Wardrobe, lended=25, quantity=45, price=120060.0}
+Book{code=333e94f188780d4058f312a8b5e8e324, name=On the Road, lended=25, quantity=51, price=120078.0}
+Book{code=357846e9284b1b7890a148df9f3e7280, name=Great Expectations, lended=25, quantity=41, price=120048.0}
+Book{code=370c26780c7a24b4799a862bf774af04, name=A Journey to the Center of the Earth, lended=25, quantity=38, price=120039.0}
 Book{code=38e3288228e46752de37840fb43d98b5, name=East of Eden, lended=25, quantity=50, price=120075.0}
 Book{code=39d2f832be2027356c8aeb62f760924f, name=Sons and Lovers, lended=25, quantity=30, price=120015.0}
+Book{code=3d37061458413a43ea1d9a3b7dd934e7, name=Roots, lended=25, quantity=52, price=120081.0}
+Book{code=3e4e5eec6e6b8fc726056b9f2bb8c2f1, name=Of Human Bondage, lended=25, quantity=50, price=120075.0}
+Book{code=3f8bc2e1dffc70ca6039db81d1721a99, name=Little House on the Prairie, lended=25, quantity=53, price=120084.0}
+Book{code=413e1d3f45c5ab0862069a18e2952ee8, name=A Portrait of the Artist as a Young Man, lended=25, quantity=28, price=120009.0}
+Book{code=415cd0f5e02cf3e12bff22a1ec13b7e9, name=Don Quixote, lended=25, quantity=25, price=120000.0}
 Book{code=41bc694e624a18c25d1f0a128c74980a, name=Les Misérables, lended=25, quantity=25, price=120000.0}
-Book{code=5e86b2a91d4ade21b42183a6a11931ae, name=Little Women, lended=25, quantity=40, price=120045.0}
-Book{code=8c1847b5d1cae042543c74ae49268aa9, name=The Sorrows of Young Werther, lended=25, quantity=26, price=120003.0}
+Book{code=42f9fa9cfbfae840ec44c040e271ee62, name=Moby Dick, lended=25, quantity=33, price=120024.0}
+Book{code=44de30eafc17fab58f0b87ed6b0e34c6, name=The Mysterious Island, lended=25, quantity=36, price=120033.0}
+Book{code=483b177388a7f2ffceeea548fa939f53, name=20,000 Leagues Under the Sea, lended=25, quantity=31, price=120018.0}
+Book{code=4ac76a7a397c29482d43b6086ab6e745, name=The Red Pony, lended=25, quantity=41, price=120048.0}
+Book{code=4d2a3ccbd3737c22ae28b793783b090b, name=Invisible Man, lended=25, quantity=54, price=120087.0}
+Book{code=4eb711ddf85dbe519b85b2b1016aebeb, name=The Martian Chronicles, lended=25, quantity=30, price=120015.0}
+Book{code=4f5fc18d5ba7b3aca75e3d4c6a0fbebe, name=Persuasion, lended=25, quantity=53, price=120084.0}
+Book{code=4febab68cebccb1ce4ccd7ed69b5c382, name=O Pioneers!, lended=25, quantity=39, price=120042.0}
+Book{code=507601348c669a5d143ba2ed3290c32c, name=The Hunchback of Notre Dame, lended=25, quantity=46, price=120063.0}
+Book{code=52855b3cfd00b52844c1e6fde6e507ae, name=Ethan Frome, lended=25, quantity=41, price=120048.0}
+Book{code=541cfdb4a79a5d30c165282812870608, name=Madame Bovary: Patterns of Provincial life, lended=25, quantity=47, price=120066.0}
+Book{code=564f1fef2f3f0b0a2f316e7bfbd76940, name=Tuck Everlasting, lended=25, quantity=47, price=120066.0}
+Book{code=57cdc8914b48ddca2923967488c4624b, name=Their Eyes Were Watching God, lended=25, quantity=38, price=120039.0}
+Book{code=5b387bc100adf022c46aea6e15510644, name=Anne of Avonlea, lended=25, quantity=46, price=120063.0}
+Book{code=5c68c8b7c0e4d8ecaa545b751b844844, name=Murder on the Orient Express, lended=25, quantity=51, price=120078.0}
+Book{code=5d8a7c0d95a74d19157939f096c34786, name=Our Mutual Friend, lended=25, quantity=39, price=120042.0}
+Book{code=60666975e7ac7e43396505979b4ee263, name=Eugénie Grandet, lended=25, quantity=49, price=120072.0}
+Book{code=610e42949651653c71b64ff72d72c674, name=Pinocchio, lended=25, quantity=47, price=120066.0}
+Book{code=65af46ae6ba7190f3ad38c401be94169, name=The Red Badge of Courage, lended=25, quantity=50, price=120075.0}
+Book{code=65ed72f435ddd53cb3efb0b018ce2af4, name=Rebecca, lended=25, quantity=34, price=120027.0}
+Book{code=688adc05ae173490280be8223b85181a, name=To Kill a Mockingbird, lended=25, quantity=53, price=120084.0}
+Book{code=6dd1bc9445f9c3c3fff565985b15b57c, name=The Wind in the Willows, lended=25, quantity=33, price=120024.0}
+Book{code=6ea57b8da613b8b9d4e31caa661ce339, name=One Hundred Years of Solitude, lended=25, quantity=48, price=120069.0}
+Book{code=715c25d19dcad3a029511df077eeca4d, name=A Clockwork Orange, lended=25, quantity=28, price=120009.0}
+Book{code=72fb5f8156adf1b638fc9bd1fa6cdbcf, name=Nana, lended=25, quantity=38, price=120039.0}
+Book{code=74b4996fa2e69084ab28f53e92a09e41, name=Nicholas Nickleby, lended=25, quantity=39, price=120042.0}
+Book{code=76cbd9f043cf859e0d5b7a55fd85e4e2, name=A Wrinkle in Time, lended=25, quantity=42, price=120051.0}
+Book{code=79d6d95d1eec41f334ad18c5ef3f075d, name=Frankenstein, or, the Modern Prometheus, lended=25, quantity=43, price=120054.0}
+Book{code=7acf416aa150ea9d110024cd4bcbbb2e, name=Dracula, lended=25, quantity=49, price=120072.0}
+Book{code=7bdb5a9f413f4206bc0c36b935473a8b, name=Little House In the Big Woods, lended=25, quantity=28, price=120009.0}
+Book{code=7f2ce9af618f65d53fd993ddb4b0bd45, name=Remembrance of Things Past, lended=25, quantity=47, price=120066.0}
+Book{code=82db804f409dda5ca043e239ea2ee8f8, name=Bridge to Terabithia, lended=25, quantity=27, price=120006.0}
+Book{code=851010b684df4f8642992c89461f3947, name=The Betrothed, lended=25, quantity=36, price=120033.0}
+Book{code=85dd252ea0787b367c029e9597efae2f, name=The Silver Chair, lended=25, quantity=46, price=120063.0}
+Book{code=86a841f070e762c74e7ad45c4f64fda9, name=The Age of Innocence, lended=25, quantity=47, price=120066.0}
+Book{code=87b2caff441cd5a9f18c094ca376d8a3, name=Death Comes for the Archbishop, lended=25, quantity=43, price=120054.0}
+Book{code=87d039768cd783ce5d2da0371b48a8d2, name=Middlemarch, lended=25, quantity=46, price=120063.0}
+Book{code=8992f6c9525a16ee02cea013b5e1391f, name=The House of the Spirits, lended=25, quantity=34, price=120027.0}
+Book{code=8ae6e417a5fe16fa1be3bd2c6ac61840, name=Treasure Island, lended=25, quantity=29, price=120012.0}
+Book{code=8c393d20870e473defc2268ef1ad3147, name=Uncle Tom's Cabin, lended=25, quantity=45, price=120060.0}
+Book{code=90a01418d86c9c2205cdaaae35e9e735, name=To the Lighthouse, lended=25, quantity=27, price=120006.0}
 Book{code=91c007461446f710bf40efca1bdbc117, name=Vanity Fair, lended=25, quantity=39, price=120042.0}
 Book{code=93b84e1c952380f6fe7569444170e028, name=The Invisible Man, lended=25, quantity=28, price=120009.0}
 Book{code=947fc4fa2ab95f3813da6078ad9ec4c5, name=Diary of a Wimpy Kid: The Long Haul, lended=25, quantity=33, price=120024.0}
 Book{code=970eed35cee1a20ccae4e529b5683276, name=Candide, lended=25, quantity=25, price=120000.0}
-Book{code=9bbe327293b0c1dcc59ede7c5618e6cf, name=The Magician's Nephew, lended=25, quantity=28, price=120009.0}
-Book{code=a5640565774a1c29593d5db80329bfbb, name=The Swiss Family Robinson, lended=25, quantity=32, price=120021.0}
-Book{code=af0d7e2fac9870d3d80ded2c95269886, name=Harry Potter and the Deathly Hallows, lended=25, quantity=53, price=120084.0}
-Book{code=b6ae5b06ecd07ad78d04f3229ed90a24, name=Heidi, lended=25, quantity=40, price=120045.0}
-Book{code=bd838624d2c9d0c0febdde7ab5174090, name=The Mill on the Floss, lended=25, quantity=41, price=120048.0}
-Book{code=c2878925767bae635dd4a54a8dd4891d, name=Lady Chatterley's Lover, lended=25, quantity=34, price=120027.0}
-Book{code=c85534b9669c2de2e184889995a6c010, name=The Old Man and the Sea, lended=25, quantity=44, price=120057.0}
-Book{code=caf36ccbb2ef13f181263ef958bca976, name=The BFG, lended=25, quantity=48, price=120069.0}
-Book{code=cee9cf2d30c165db805e581a6f58c9aa, name=The Great Gatsby, lended=25, quantity=28, price=120009.0}
-Book{code=e3c5e19079819a6703804ce0cd50d5d5, name=Harry Potter and the Chamber of Secrets, lended=25, quantity=30, price=120015.0}
-Book{code=ebcbb3efbc0dc4a56bc07fd5fe8ec272, name=The Red & the Black, lended=25, quantity=31, price=120018.0}
-Book{code=ef226c30bcba05e68a607542e2befe61, name=The Sea Wolf, lended=25, quantity=40, price=120045.0}
-Book{code=f754b9116e6a0bf105a7ea949226b9fe, name=The Complete Sherlock Holmes, lended=25, quantity=42, price=120051.0}
-Book{code=fb3fa02032dba0c7fd621d7056b95a6c, name=My Ántonia, lended=25, quantity=42, price=120051.0}
-Book{code=01d0722c1f9961f2b763fbe51869299a, name=Twilight, lended=25, quantity=36, price=120033.0}
-Book{code=05681644e2bdc89690812428166e54af, name=The Heart Is a Lonely Hunter, lended=25, quantity=31, price=120018.0}
-Book{code=06ce17e82f3fc1cf6db909fcbf008270, name=The Bluest Eye, lended=25, quantity=27, price=120006.0}
-Book{code=0a201c0a6cf7969767dfd4feddbf8186, name=Sense and Sensibility, lended=25, quantity=36, price=120033.0}
-Book{code=170cc79e5395af6ed215709709612873, name=The House of the Seven Gables, lended=25, quantity=25, price=120000.0}
-Book{code=28df63e501029ea9f4477bc926e534b2, name=The Hound of the Baskervilles, lended=25, quantity=43, price=120054.0}
-Book{code=30f8b46d900cee32bf8b8c6859f27416, name=Harry Potter and the Prisoner of Azkaban, lended=25, quantity=37, price=120036.0}
-Book{code=382f874dc0d2c4784990ede7968327f3, name=The Horse and His Boy, lended=25, quantity=33, price=120024.0}
-Book{code=3da3ce694e95fc157eec5d9ec2078260, name=Robinson Crusoe, lended=25, quantity=46, price=120063.0}
-Book{code=4177ab43468e9d5d0ce902b312b74be6, name=Quo Vadis, lended=25, quantity=39, price=120042.0}
-Book{code=4243174ad2c07cc2273a22a229d11cb4, name=Tess of the d'Urbervilles, lended=25, quantity=38, price=120039.0}
-Book{code=541cfdb4a79a5d30c165282812870608, name=Madame Bovary: Patterns of Provincial life, lended=25, quantity=47, price=120066.0}
-Book{code=79d6d95d1eec41f334ad18c5ef3f075d, name=Frankenstein, or, the Modern Prometheus, lended=25, quantity=43, price=120054.0}
-Book{code=90a01418d86c9c2205cdaaae35e9e735, name=To the Lighthouse, lended=25, quantity=27, price=120006.0}
 Book{code=985cf0fdcb5d89a89eab35bc4db6238e, name=The Old Curiosity Shop, lended=25, quantity=42, price=120051.0}
 Book{code=9e54d7a7177dafc26129fd4cdf8f266d, name=The Joy Luck Club, lended=25, quantity=50, price=120075.0}
-Book{code=a38cf621b8e9172738d444886115322f, name=The Metamorphosis, lended=25, quantity=30, price=120015.0}
-Book{code=aa0b01f011e60f19857720408a7b7297, name=Bleak House, lended=25, quantity=33, price=120024.0}
-Book{code=b1f7e8c5c5d12670675975e769ec11b9, name=Peter Pan, lended=25, quantity=53, price=120084.0}
-Book{code=b78a8f43504562412d48f01622dbcd52, name=Ivanhoe, lended=25, quantity=49, price=120072.0}
-Book{code=bcb50b5b2450325f519d0915ea24260c, name=Stuart Little, lended=25, quantity=25, price=120000.0}
-Book{code=be71773a814872f705c2d1eb5e54ce0a, name=Catching Fire, lended=25, quantity=41, price=120048.0}
-Book{code=c1e844aab533d4f064db7b3d81751457, name=A Connecticut Yankee in King Arthur's Court, lended=25, quantity=45, price=120060.0}
-Book{code=c47aebf5a1416771c12c22ffbef2c5a8, name=The Catcher in the Rye, lended=25, quantity=36, price=120033.0}
-Book{code=c84e9ec5b787948ebdf36a675b0b5126, name=The Stranger, lended=25, quantity=32, price=120021.0}
-Book{code=cf8b5624a90e172e39c4e2cff22eddff, name=Love in the Time of Cholera, lended=25, quantity=33, price=120024.0}
-Book{code=dd15da8906bfe85216386f5a9352e407, name=All Quiet on the Western Front, lended=25, quantity=40, price=120045.0}
-Book{code=e40d12dc7a6efa51e78eab122f35f842, name=Harry Potter and the Goblet of Fire, lended=25, quantity=40, price=120045.0}
-Book{code=ece9ff7a4fd352b4c13afb0fd32c0022, name=Through the Looking-Glass, and What Alice Found There, lended=25, quantity=32, price=120021.0}
-Book{code=eff4356ea284faa6f7f06d30cbcab87f, name=The Appeal, lended=25, quantity=53, price=120084.0}
-Book{code=f55fbaaca148300ac11f7752528cae3d, name=Kim, lended=25, quantity=38, price=120039.0}
-Book{code=f861e3a265180ead7098c9f8ce28bfd4, name=The Alchemist, lended=25, quantity=44, price=120057.0}
-Book{code=fa354bd980e39eaaf33a958facb4e730, name=The Vicar of Wakefield, lended=25, quantity=44, price=120057.0}
-Book{code=fd878092acc5af378d52d2bf9fde830c, name=The Return of the Native, lended=25, quantity=29, price=120012.0}
-Book{code=015696972454b3c760fdac5ef28657b4, name=The Phantom of the Opera, lended=25, quantity=29, price=120012.0}
-Book{code=08a924bf602a635be19fab5109944760, name=Absalom, Absalom!, lended=25, quantity=33, price=120024.0}
-Book{code=1474e19901758d79b47484ad4fcc5bb4, name=Anne of Green Gables, lended=25, quantity=51, price=120078.0}
-Book{code=217cb452ee5fbe966e859d9c60d33da8, name=Kidnapped: The Adventures of David Balfour, lended=25, quantity=35, price=120030.0}
-Book{code=26a32bd7c2b2619590752eb087c48e9f, name=Harry Potter and the Order of the Phoenix, lended=25, quantity=29, price=120012.0}
-Book{code=2984330e678e7b198079527e50506cab, name=The Tale of Genji, lended=25, quantity=42, price=120051.0}
-Book{code=333e94f188780d4058f312a8b5e8e324, name=On the Road, lended=25, quantity=51, price=120078.0}
-Book{code=39d38eb7c7cc90641e86399b0245c830, name=The Book Thief, lended=25, quantity=37, price=120036.0}
-Book{code=3e4e5eec6e6b8fc726056b9f2bb8c2f1, name=Of Human Bondage, lended=25, quantity=50, price=120075.0}
-Book{code=483b177388a7f2ffceeea548fa939f53, name=20,000 Leagues Under the Sea, lended=25, quantity=31, price=120018.0}
-Book{code=5a5b3cf40c976a36eecb42eb59fe2e53, name=The Da Vinci Code, lended=25, quantity=52, price=120081.0}
-Book{code=72d9f332babfb8866912924a09ef9a53, name=Crime and Punishment, lended=25, quantity=46, price=120063.0}
-Book{code=7acf416aa150ea9d110024cd4bcbbb2e, name=Dracula, lended=25, quantity=49, price=120072.0}
-Book{code=8fe1a9c047024707b90a38d45bcefdba, name=Dombey And Son, lended=25, quantity=54, price=120087.0}
-Book{code=91275f95741b5a8017cbb122b6b21b85, name=The Voyage of the Dawn Treader, lended=25, quantity=35, price=120030.0}
 Book{code=a2607535ccdcf06dde5903466979468f, name=The Power and the Glory, lended=25, quantity=27, price=120006.0}
-Book{code=a73e1d36bde60cb7bb45f117e77cf51f, name=The Woman In White, lended=25, quantity=32, price=120021.0}
+Book{code=a5640565774a1c29593d5db80329bfbb, name=The Swiss Family Robinson, lended=25, quantity=32, price=120021.0}
+Book{code=aa0b01f011e60f19857720408a7b7297, name=Bleak House, lended=25, quantity=33, price=120024.0}
 Book{code=ab6d8fd1fb1d3fc927da1ad08e51aad4, name=Northanger Abbey, lended=25, quantity=49, price=120072.0}
+Book{code=ade4927756e31545264c99282e0ddb53, name=The Bridge of San Luis Rey, lended=25, quantity=49, price=120072.0}
+Book{code=aeec4f59a21355b8ce3a6f0eb1832d02, name=Fahrenheit 451, lended=25, quantity=37, price=120036.0}
+Book{code=b114116d481363da549665be6db36f22, name=Gulliver's Travels, lended=25, quantity=35, price=120030.0}
+Book{code=b1f7e8c5c5d12670675975e769ec11b9, name=Peter Pan, lended=25, quantity=53, price=120084.0}
 Book{code=b415041d4d493b279db727a461dcc9a8, name=Gone with the Wind, lended=25, quantity=41, price=120048.0}
-Book{code=bade8553b9a72d4fa3a0c893c3eaa176, name=Far from the Madding Crowd, lended=25, quantity=27, price=120006.0}
+Book{code=b6ae5b06ecd07ad78d04f3229ed90a24, name=Heidi, lended=25, quantity=40, price=120045.0}
+Book{code=b8c4dddb13d8063255c30933d79ce1f8, name=The Silmarillion, lended=25, quantity=51, price=120078.0}
+Book{code=bbc1a5c90994c440f3344da6c5542663, name=The Call of the Wild, lended=25, quantity=30, price=120015.0}
+Book{code=bd838624d2c9d0c0febdde7ab5174090, name=The Mill on the Floss, lended=25, quantity=41, price=120048.0}
+Book{code=be78cd94afc6730cb9b6f9d428dbd8d5, name=A Tale of Two Cities, lended=25, quantity=39, price=120042.0}
 Book{code=c0b65f6c2b89983dc77a15c69cf1e4e1, name=Fathers and Sons, lended=25, quantity=47, price=120066.0}
-Book{code=c59d076ddf9d47dbffb709684cb6b559, name=The Jungle, lended=25, quantity=51, price=120078.0}
-Book{code=c777d71959caffbe1683b3ed9bf78d52, name=James and the Giant Peach, lended=25, quantity=32, price=120021.0}
+Book{code=c2878925767bae635dd4a54a8dd4891d, name=Lady Chatterley's Lover, lended=25, quantity=34, price=120027.0}
+Book{code=c53e38c6b75d775fe4a30c4fc07a11ce, name=A Painted House, lended=25, quantity=34, price=120027.0}
+Book{code=c65654dd1c1a4d7c0b1bf24fe96dc28f, name=The Last of the Mohicans, lended=25, quantity=37, price=120036.0}
+Book{code=c72af8bd036e7de87abeb70351e0c76e, name=All the King's Men, lended=25, quantity=42, price=120051.0}
+Book{code=c84e9ec5b787948ebdf36a675b0b5126, name=The Stranger, lended=25, quantity=32, price=120021.0}
+Book{code=c85c26d0e7446de0d6f50ac0a1302ccf, name=Alice's Adventures in Wonderland, lended=25, quantity=26, price=120003.0}
+Book{code=cc493343bcf91039e61382cae470e200, name=Catch-22, lended=25, quantity=52, price=120081.0}
+Book{code=cee6def7f230cfa39fedbd94ddd29b93, name=A Christmas Carol, lended=25, quantity=37, price=120036.0}
 Book{code=cf53c61fb52eb18075074f70c73f41ef, name=Pippi Longstocking, lended=25, quantity=29, price=120012.0}
+Book{code=d03b58bec12698138e52dee462b30d64, name=Cannery Row, lended=25, quantity=49, price=120072.0}
 Book{code=d77bdfeb330838a9dd9d48bf134ff6bd, name=Tender is the Night, lended=25, quantity=47, price=120066.0}
+Book{code=dc27e5e3f1e3d3954779ed05571b69d7, name=The Secret Garden, lended=25, quantity=26, price=120003.0}
 Book{code=de4c19907ea690fba6bc4cf7998c97e9, name=Lorna Doone, lended=25, quantity=44, price=120057.0}
-Book{code=e4c39426942e95b09558cf1570a86ea7, name=The Curious Incident of the Dog In the Night-Time, lended=25, quantity=35, price=120030.0}
+Book{code=e40d12dc7a6efa51e78eab122f35f842, name=Harry Potter and the Goblet of Fire, lended=25, quantity=40, price=120045.0}
+Book{code=e542d826196f174feabb214b90bce300, name=Brave New World, lended=25, quantity=51, price=120078.0}
+Book{code=e6a4f5e07f8cd034c34002458d9667f7, name=The Pickwick Papers, lended=25, quantity=46, price=120063.0}
+Book{code=eae78ccb7f483b5a044e596893d5c888, name=Lord Jim, lended=25, quantity=29, price=120012.0}
 Book{code=ec61ecc6fc015067538883dd5e1971cd, name=Light in August, lended=25, quantity=45, price=120060.0}
-Book{code=f9e99436909d6b8abdf186dcc461d9a9, name=The Hunger Games, lended=25, quantity=47, price=120066.0}
+Book{code=ed321036f662224f5c12858649d8e491, name=Oliver Twist, lended=25, quantity=44, price=120057.0}
+Book{code=ef226c30bcba05e68a607542e2befe61, name=The Sea Wolf, lended=25, quantity=40, price=120045.0}
+Book{code=f06931db24c9654d95251880103c652e, name=The Three Musketeers, lended=25, quantity=50, price=120075.0}
+Book{code=f754b9116e6a0bf105a7ea949226b9fe, name=The Complete Sherlock Holmes, lended=25, quantity=42, price=120051.0}
+Book{code=f922fa2d4deaee5c8e3b56f233c1f110, name=Animal Farm, lended=25, quantity=27, price=120006.0}
+Book{code=fa354bd980e39eaaf33a958facb4e730, name=The Vicar of Wakefield, lended=25, quantity=44, price=120057.0}
 Book{code=fd12c6883a2cdcd956e90a50bd9b324e, name=A Passage to India, lended=25, quantity=37, price=120036.0}
 Book{code=ff29e993ac88705860c68e72ced5beaa, name=Watership Down, lended=25, quantity=37, price=120036.0}
-Book{code=0d9541e60519e780e6d7d2a7906dfa6e, name=The Prince and the Pauper, lended=25, quantity=27, price=120006.0}
-Book{code=156f81c27d05d15751c80ff770edf45f, name=Song of Solomon, lended=25, quantity=37, price=120036.0}
-Book{code=19db13ccfbc2a7f340907656158139d4, name=The Decameron, lended=25, quantity=49, price=120072.0}
-Book{code=24b67cac370bcb333c8d22a21ecacdad, name=The Strange Case of Dr. Jekyll and Mr. Hyde, lended=25, quantity=45, price=120060.0}
-Book{code=2da902628839850535888d474ef99d87, name=The Idiot, lended=25, quantity=48, price=120069.0}
-Book{code=33b1a9a6cdad3bf7012dc9a3b5b11d2e, name=The Magic Mountain (Der Zauberberg), lended=25, quantity=31, price=120018.0}
-Book{code=3d37061458413a43ea1d9a3b7dd934e7, name=Roots, lended=25, quantity=52, price=120081.0}
-Book{code=3eb6299ed4fc10845d253db5d32c361c, name=A Room With a View, lended=25, quantity=36, price=120033.0}
-Book{code=4362e0cb59221e8470326c594275b3ab, name=Harry Potter and the Sorcerer's Stone, lended=25, quantity=39, price=120042.0}
-Book{code=4acec798715d41982aa61afaec8e8e00, name=The Picture of Dorian Gray, lended=25, quantity=34, price=120027.0}
-Book{code=54ac7a412c078d1b25662b7d4977cdf7, name=This Side of Paradise, lended=25, quantity=48, price=120069.0}
-Book{code=5cdf675f5bb7ec354240eff21accaf33, name=The Sound and the Fury, lended=25, quantity=39, price=120042.0}
-Book{code=688adc05ae173490280be8223b85181a, name=To Kill a Mockingbird, lended=25, quantity=53, price=120084.0}
-Book{code=73f5a08f3dea723868612fc30a2329b2, name=War and Peace, lended=25, quantity=52, price=120081.0}
-Book{code=7a2ecf5be0ebc4cdb1b62bb97b38dace, name=Silas Marner, lended=25, quantity=32, price=120021.0}
-Book{code=8232809a1582f5c76e1126a7ebb7d8b6, name=The Wizard of Oz, lended=25, quantity=54, price=120087.0}
-Book{code=ab0dc79b559f490adf24ffc9b96ed3e9, name=Beloved, lended=25, quantity=25, price=120000.0}
-Book{code=ae22d013de0199425288083ef16a18de, name=The Handmaid's Tale, lended=25, quantity=40, price=120045.0}
-Book{code=b366d11ab901128df5c5b2e72daea432, name=The War of the Worlds, lended=25, quantity=45, price=120060.0}
-Book{code=b605e222f051cc8c834abd4bbf3c8546, name=In Cold Blood, lended=25, quantity=33, price=120024.0}
-Book{code=b8c4dddb13d8063255c30933d79ce1f8, name=The Silmarillion, lended=25, quantity=51, price=120078.0}
-Book{code=c0a263b333ce6dcf33b7e7d772163f50, name=Siddhartha, lended=25, quantity=30, price=120015.0}
-Book{code=c53e38c6b75d775fe4a30c4fc07a11ce, name=A Painted House, lended=25, quantity=34, price=120027.0}
-Book{code=c6b872a4bbd2cb2bf37e44f6d2f2c7ba, name=Barchester Towers and the Warden, lended=25, quantity=48, price=120069.0}
-Book{code=d1b5602d2217ac45d0fb2a792a1d658d, name=Roll of Thunder, Hear My Cry, lended=25, quantity=42, price=120051.0}
-Book{code=dc0cb51764a6d220fc314141ea68ebff, name=Hatchet, lended=25, quantity=49, price=120072.0}
-Book{code=0b7a00c7e827c5475a20d4d2db1dd6a3, name=Nineteen Eighty-Four, lended=25, quantity=50, price=120075.0}
-Book{code=10c27edd67bf2e2697c2efb759feb691, name=The Fellowship of the Ring, lended=25, quantity=28, price=120009.0}
-Book{code=18aa6d5d320cfbba7a753584da8f3e93, name=Dream of the Red Chamber, lended=25, quantity=51, price=120078.0}
-Book{code=1d71804d4d2a7bcb30dd3ad8bbb1c995, name=The History of Tom Jones, a Foundling, lended=25, quantity=36, price=120033.0}
-Book{code=23668fe5b5c6a277779d2cacec2ca806, name=The Bell Jar, lended=25, quantity=36, price=120033.0}
-Book{code=25ca1b9af3a0db530d3296858bacce00, name=Cry, The Beloved Country, lended=25, quantity=26, price=120003.0}
-Book{code=2c59ceaa4035b1265cf5006a23632eef, name=Holes, lended=25, quantity=29, price=120012.0}
-Book{code=2ea0bfd1458207c73b0f2c50779595d2, name=The Portrait of a Lady, lended=25, quantity=52, price=120081.0}
-Book{code=3f8bc2e1dffc70ca6039db81d1721a99, name=Little House on the Prairie, lended=25, quantity=53, price=120084.0}
-Book{code=472c589eb8ebda8876aa90437b7f8e2b, name=Père Goriot, lended=25, quantity=34, price=120027.0}
-Book{code=487a21c08f310a41e316fd10f2c266c6, name=The Last Battle, lended=25, quantity=27, price=120006.0}
-Book{code=507601348c669a5d143ba2ed3290c32c, name=The Hunchback of Notre Dame, lended=25, quantity=46, price=120063.0}
-Book{code=57cdc8914b48ddca2923967488c4624b, name=Their Eyes Were Watching God, lended=25, quantity=38, price=120039.0}
-Book{code=5c68c8b7c0e4d8ecaa545b751b844844, name=Murder on the Orient Express, lended=25, quantity=51, price=120078.0}
-Book{code=5d8a7c0d95a74d19157939f096c34786, name=Our Mutual Friend, lended=25, quantity=39, price=120042.0}
-Book{code=610e42949651653c71b64ff72d72c674, name=Pinocchio, lended=25, quantity=47, price=120066.0}
-Book{code=6dd1bc9445f9c3c3fff565985b15b57c, name=The Wind in the Willows, lended=25, quantity=33, price=120024.0}
-Book{code=72fb5f8156adf1b638fc9bd1fa6cdbcf, name=Nana, lended=25, quantity=38, price=120039.0}
-Book{code=76cbd9f043cf859e0d5b7a55fd85e4e2, name=A Wrinkle in Time, lended=25, quantity=42, price=120051.0}
-Book{code=7b885dd61b5c6c2dbfdeb2dca74d73fc, name=Of Mice and Men, lended=25, quantity=43, price=120054.0}
-Book{code=862b8403b9f5febe07a466aed3a0ffa1, name=Mansfield Park, lended=25, quantity=54, price=120087.0}
-Book{code=abc74e90090050c83a5740b89cda5056, name=A Tree Grows in Brooklyn, lended=25, quantity=31, price=120018.0}
-Book{code=c72af8bd036e7de87abeb70351e0c76e, name=All the King's Men, lended=25, quantity=42, price=120051.0}
-Book{code=d03b58bec12698138e52dee462b30d64, name=Cannery Row, lended=25, quantity=49, price=120072.0}
-Book{code=0d6adc21b32265afa7211d481e831eff, name=The Outsiders, lended=25, quantity=53, price=120084.0}
-Book{code=0efabb81a95400dd9d02e39eb964e1c1, name=Around the World in Eighty Days, lended=25, quantity=53, price=120084.0}
-Book{code=1271c27e339d3c3f72ff85baa284f5c5, name=Native Son, lended=25, quantity=54, price=120087.0}
-Book{code=1843fc0dfa2399e3bd0fdb470438d7be, name=Johnny Tremain, lended=25, quantity=45, price=120060.0}
-Book{code=1c4ddc1e3be3006c444294313acdad9a, name=Prince Caspian: The Return to Narnia, lended=25, quantity=44, price=120057.0}
-Book{code=1e4ce4724ddf2777595afc2885a2c4ce, name=The Two Towers, lended=25, quantity=44, price=120057.0}
-Book{code=23f1076a0792266714b7d931249c34b9, name=Things Fall Apart, lended=25, quantity=43, price=120054.0}
-Book{code=2fe3f58aa7442e90085e2cb9408c543c, name=The Way of All Flesh, lended=25, quantity=32, price=120021.0}
-Book{code=44de30eafc17fab58f0b87ed6b0e34c6, name=The Mysterious Island, lended=25, quantity=36, price=120033.0}
-Book{code=4ac76a7a397c29482d43b6086ab6e745, name=The Red Pony, lended=25, quantity=41, price=120048.0}
-Book{code=4f5fc18d5ba7b3aca75e3d4c6a0fbebe, name=Persuasion, lended=25, quantity=53, price=120084.0}
-Book{code=5261f30a90a8f832f616ee61224ee40f, name=Utopia, lended=25, quantity=35, price=120030.0}
-Book{code=56893fe65969cfcfd16bffb9aeed9617, name=The Girl With the Dragon Tattoo, lended=25, quantity=35, price=120030.0}
-Book{code=5b3cc4f58a5d1b60b6aaba7cebb14a52, name=The Lovely Bones, lended=25, quantity=52, price=120081.0}
-Book{code=60e45c1d0b3d4a5033a7925812629f35, name=Ben-Hur, lended=25, quantity=54, price=120087.0}
-Book{code=65af46ae6ba7190f3ad38c401be94169, name=The Red Badge of Courage, lended=25, quantity=50, price=120075.0}
-Book{code=6b2fe5f35923808696bb8966a25ba978, name=The Kite Runner, lended=25, quantity=50, price=120075.0}
-Book{code=6ea57b8da613b8b9d4e31caa661ce339, name=One Hundred Years of Solitude, lended=25, quantity=48, price=120069.0}
-Book{code=74b4996fa2e69084ab28f53e92a09e41, name=Nicholas Nickleby, lended=25, quantity=39, price=120042.0}
-Book{code=79a92b13be69d38143b56ca9a0462561, name=Sister Carrie, lended=25, quantity=45, price=120060.0}
-Book{code=7e346f12bd9c19caf4cdc8e6ef16bd76, name=The Yearling, lended=25, quantity=38, price=120039.0}
-Book{code=85dd252ea0787b367c029e9597efae2f, name=The Silver Chair, lended=25, quantity=46, price=120063.0}
-Book{code=87d039768cd783ce5d2da0371b48a8d2, name=Middlemarch, lended=25, quantity=46, price=120063.0}
-Book{code=ade4927756e31545264c99282e0ddb53, name=The Bridge of San Luis Rey, lended=25, quantity=49, price=120072.0}
-Book{code=0d4a675326f4f8bf68d4cfad6ed2e592, name=The Help, lended=25, quantity=50, price=120075.0}
-Book{code=0e9e03d28d98fedebc1c936f0a37d04c, name=Life of Pi, lended=25, quantity=52, price=120081.0}
-Book{code=109e3124e11ab536913afab2803ec485, name=One Flew Over the Cuckoo's Nest, lended=25, quantity=51, price=120078.0}
-Book{code=144152fe9488515aa0a85346feca6bd2, name=Villette, lended=25, quantity=34, price=120027.0}
-Book{code=2089a2c1a93450b971ab2472fbc833e6, name=Hard Times, lended=25, quantity=54, price=120087.0}
-Book{code=24b11e2b47e2d4315c374e95a3c3c564, name=Cross Fire, lended=25, quantity=26, price=120003.0}
-Book{code=4eed13b973a6bcd8042840e9750f42c3, name=The Good Earth, lended=25, quantity=31, price=120018.0}
-Book{code=4fb9f1ba0ace5ffdfae01926507b1303, name=The Mayor of Casterbridge, lended=25, quantity=25, price=120000.0}
-Book{code=52855b3cfd00b52844c1e6fde6e507ae, name=Ethan Frome, lended=25, quantity=41, price=120048.0}
-Book{code=564f1fef2f3f0b0a2f316e7bfbd76940, name=Tuck Everlasting, lended=25, quantity=47, price=120066.0}
-Book{code=5b387bc100adf022c46aea6e15510644, name=Anne of Avonlea, lended=25, quantity=46, price=120063.0}
-Book{code=60666975e7ac7e43396505979b4ee263, name=Eugénie Grandet, lended=25, quantity=49, price=120072.0}
-Book{code=63e1a28f49c203b1ec863e94b24133b6, name=An American Tragedy, lended=25, quantity=26, price=120003.0}
-Book{code=65ed72f435ddd53cb3efb0b018ce2af4, name=Rebecca, lended=25, quantity=34, price=120027.0}
-Book{code=6e8b432d8fc548122b13058e381c47c8, name=The Plague, lended=25, quantity=38, price=120039.0}
-Book{code=6feda8903c2556ae74c96a754f799356, name=A Farewell to Arms, lended=25, quantity=54, price=120087.0}
-Book{code=75a99d3d552324ffaf056a8177621cae, name=Memoirs of a Geisha, lended=25, quantity=38, price=120039.0}
-Book{code=7bdb5a9f413f4206bc0c36b935473a8b, name=Little House In the Big Woods, lended=25, quantity=28, price=120009.0}
-Book{code=7f2ce9af618f65d53fd993ddb4b0bd45, name=Remembrance of Things Past, lended=25, quantity=47, price=120066.0}
-Book{code=82db804f409dda5ca043e239ea2ee8f8, name=Bridge to Terabithia, lended=25, quantity=27, price=120006.0}
-Book{code=86a841f070e762c74e7ad45c4f64fda9, name=The Age of Innocence, lended=25, quantity=47, price=120066.0}
-Book{code=8887cc3ddb07aa7cbdd542ec48dd473b, name=The Color Purple, lended=25, quantity=48, price=120069.0}
-Book{code=0cada197ddf7d313a36e7f78f933b7ce, name=Germinal, lended=25, quantity=30, price=120015.0}
-Book{code=1023ad351ca77506cb9208a0bfd03dc0, name=The Moonstone, lended=25, quantity=41, price=120048.0}
-Book{code=1f24a006c4a977d78cf48e9d196391e4, name=The Giver, lended=25, quantity=43, price=120054.0}
-Book{code=4d9bb68ff948d6ca06aedae9aea3873d, name=Little Dorrit, lended=25, quantity=43, price=120054.0}
-Book{code=5017156ac3cdb363e9cb07b68754ec8c, name=Captains Courageous, lended=25, quantity=28, price=120009.0}
-Book{code=535a1e8e57e4cb346e24728ac8d850f2, name=Women in Love, lended=25, quantity=37, price=120036.0}
-Book{code=65bbbbcd6234a810c9c5e6d3f692cd40, name=Babbitt, lended=25, quantity=40, price=120045.0}
-Book{code=66de4e1250e0d9bc56180f4b606b338b, name=Angels & Demons, lended=25, quantity=34, price=120027.0}
-Book{code=715c25d19dcad3a029511df077eeca4d, name=A Clockwork Orange, lended=25, quantity=28, price=120009.0}
-Book{code=855ebb861cbf9d6c1c0abb68436a8748, name=Adam Bede, lended=25, quantity=35, price=120030.0}
-Book{code=87c6ae0c1d8b6b9ba211a0cd10249a89, name=The Castle, lended=25, quantity=29, price=120012.0}
-Book{code=8a68d2dd6b87c9f949c839dbb4b5c605, name=The Pearl, lended=25, quantity=40, price=120045.0}
-Book{code=0f7893272a042f497237148373ff45fb, name=Slaughterhouse-Five, lended=25, quantity=25, price=120000.0}
-Book{code=4d2a3ccbd3737c22ae28b793783b090b, name=Invisible Man, lended=25, quantity=54, price=120087.0}
-Book{code=4eb711ddf85dbe519b85b2b1016aebeb, name=The Martian Chronicles, lended=25, quantity=30, price=120015.0}
-Book{code=4febab68cebccb1ce4ccd7ed69b5c382, name=O Pioneers!, lended=25, quantity=39, price=120042.0}
-Book{code=851010b684df4f8642992c89461f3947, name=The Betrothed, lended=25, quantity=36, price=120033.0}
-Book{code=86c475c95026b77419edb9dda462d527, name=One Day in the Life of Ivan Denisovich, lended=25, quantity=39, price=120042.0}
-Book{code=8992f6c9525a16ee02cea013b5e1391f, name=The House of the Spirits, lended=25, quantity=34, price=120027.0}
-Book{code=84a4e39b2ad8cd26c4f2d81fdbac6265, name=The Road, lended=25, quantity=31, price=120018.0}
-Book{code=87b2caff441cd5a9f18c094ca376d8a3, name=Death Comes for the Archbishop, lended=25, quantity=43, price=120054.0}
