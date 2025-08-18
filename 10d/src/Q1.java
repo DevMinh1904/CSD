@@ -1,3 +1,4 @@
+package Muoidiem;
 
 ///*
 // * To change this license header, choose License Headers in Project Properties.
@@ -104,7 +105,7 @@
 //}
 //
 //public void sortLastKNodes(int k) {
-//    int n = size; // ??t n lï¿½ kï¿½ch th??c c?a danh sï¿½ch
+//    int n = size; // ??t n là kích th??c c?a danh sách
 //    for (int i = n - k; i < n - 1; i++) {
 //        for (int j = i + 1; j < n; j++) {
 //            Node pi = getNode(i), pj = getNode(j);

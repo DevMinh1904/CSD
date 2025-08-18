@@ -1,0 +1,187 @@
+//===================Request Queue==============================
+||___Enqueue__________// Add an object to the queue
+||___Dequeue__________// Remove an object from the queue
+||___Peek_____________// View the front object in the queue without removing it
+||___IsEmpty__________// Check if the queue is empty
+||___Clear____________// Clear all elements in the queue
+||___Size_____________// Get the number of elements in the queue
+||___Display__________// Display all objects in the queue
+||___Get_Node_At______// Get the Node at index x in the queue
+||___Find_By_A________// Find a Node with an object that has attribute A = x
+||___Find_First_By_A________// Find the first node with attribute A = x
+||___Find_Second_By_A__// Find the second node with attribute A = x
+||___Swap_By_Index____// Swap two nodes based on their index
+||___Find_Min_By_A____// Find the object with the minimum value of attribute A
+||___Find_Max_By_A____// Find the object with the maximum value of attribute A
+
+// Enqueue // Add an object to the queue
+    public void enqueue(T obj) {
+        Node newNode = new Node(obj);
+        if (rear == null) {
+            front = rear = newNode;
+        } else {
+            rear.next = newNode;
+            rear = newNode;
+        }
+    }
+
+// Dequeue // Remove an object from the queue
+    public T dequeue() {
+        if (isEmpty()) {
+            return null;
+        }
+        T data = front.info;
+        front = front.next;
+        if (front == null) {
+            rear = null;
+        }
+        return data;
+    }
+
+// Peek // View the front object in the queue without removing it
+    public T peek() {
+        if (isEmpty()) {
+            return null;
+        }
+        return front.info;
+    }
+
+// IsEmpty // Check if the queue is empty
+    public boolean isEmpty() {
+        return front == null;
+    }
+
+// Clear // Clear all elements in the queue
+    public void clear() {
+        front = rear = null;
+    }
+
+// Size // Get the number of elements in the queue (calculated dynamically)
+    public int size() {
+        int count = 0;
+        Node current = front;
+        while (current != null) {
+            count++;
+            current = current.next;
+        }
+        return count;
+    }
+
+// Display // Display all objects in the queue
+    public void display() {
+        Node current = front;
+        while (current != null) {
+            System.out.println(current.info); // Assuming the object has a toString() method
+            current = current.next;
+        }
+    }
+
+// Get Node At // Get the Node at index x in the queue
+    public Node getNodeAt(int index) {
+        if (index < 0 || index >= size()) {
+            return null; // Return null if the index is invalid
+        }
+        Node current = front;
+        int count = 0;
+        while (current != null) {
+            if (count == index) {
+                return current; // Return the Node at the given index
+            }
+            count++;
+            current = current.next;
+        }
+        return null;
+    }
+
+// Find By A // Find a Node with an object that has attribute A = x
+    public Node findByA(String attribute) {
+        Node current = front;
+        while (current != null) {
+            if (current.info.A.equals(attribute)) { // Use toString() to compare the attribute
+                return current; // Return the Node if a match is found
+            }
+            current = current.next;
+        }
+        return null; // Return null if no match is found
+    }
+
+// Swap two nodes based on their index
+public void swap(int index1, int index2) {
+    if (index1 == index2 || index1 < 0 || index2 < 0 || index1 >= size() || index2 >= size()) {
+        return; // Do nothing if indices are invalid or the same
+    }
+
+    Node node1 = getNodeAt(index1);
+    Node node2 = getNodeAt(index2);
+
+    if (node1 != null && node2 != null) {
+        T temp = node1.info;
+        node1.info = node2.info;
+        node2.info = temp;
+    }
+}
+
+// Find the first node with attribute A = x
+public Node findFirstByA(String attribute) {
+    Node current = front;
+    while (current != null) {
+        if (current.info.A.equals(attribute)) {
+            return current; // Return the first matching node
+        }
+        current = current.next;
+    }
+    return null; // Return null if no match is found
+}
+
+// Find the second node with attribute A = x
+public Node findSecondByA(String attribute) {
+    Node current = front;
+    int count = 0;
+
+    while (current != null) {
+        if (current.info.A.equals(attribute)) {
+            count++;
+            if (count == 2) {
+                return current; // Return the second matching node
+            }
+        }
+        current = current.next;
+    }
+    return null; // Return null if second match is not found
+}
+
+// Find the object with the minimum value of attribute A
+public T findMinByA() {
+    if (isEmpty()) {
+        return null;
+    }
+    Node current = front;
+    T min = current.info;
+
+    while (current != null) {
+        if (((Comparable<String>) current.info.A).compareTo(min.A) < 0) { // Assuming A is a String, modify if A is a different type
+            min = current.info;
+        }
+        current = current.next;
+    }
+    return min;
+}
+
+// Find the object with the maximum value of attribute A
+public T findMaxByA() {
+    if (isEmpty()) {
+        return null;
+    }
+    Node current = front;
+    T max = current.info;
+
+    while (current != null) {
+        if (((Comparable<String>) current.info.A).compareTo(max.A) > 0) { // Assuming A is a String, modify if A is a different type
+            max = current.info;
+        }
+        current = current.next;
+    }
+    return max;
+}
+
+
